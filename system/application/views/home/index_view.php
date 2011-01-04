@@ -27,7 +27,7 @@
 
 	
 	
-	<div class='container'  id='insideDiv'   style='height:800px;border:1px solid gray'  >
+	<div class='container'  id='insideDiv'   style='height:800px;border:0px solid gray'  >
 	</div>
 
 
