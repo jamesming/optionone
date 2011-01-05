@@ -41,15 +41,9 @@
 	src='images/logo.jpg'>
 	
 	
-	
-	
-
-	
-	
-	
-	
 	<img   style='
-	
+	padding-top:30px;
+	padding-right:10px;
 	float:right;
 	'  
 	src='images/free_consultation.jpg'>
@@ -105,8 +99,8 @@
 			  }
 			
 			#menu1 a:hover {
-			  #color:#fff; 
-			  background:#08c;
+			  color:darkblue; 
+			  #background:#08c;
 			  }
 			</style>
 						
@@ -161,7 +155,7 @@
       display:block;
     }
 </style>
-<div class='container' >
+<div class='container'   style='height:300px'   >
 	<div id="myGallery">
 		<img  class='active'  src='images/mainImage.jpg'>	
 		<img   src='images/mainImage2.jpg'>	
