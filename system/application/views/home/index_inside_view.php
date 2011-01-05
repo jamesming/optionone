@@ -48,7 +48,7 @@
 **/
 --> 
 
-<div   class='container' 
+<div   class='container' >
 	
 		<img   style='
 		float:left;
@@ -288,7 +288,7 @@
 --> 
 
 
-<div   class='container' style='
+<div   class='container rounded_top_right rounded_top_left' style='
 
 padding:20px 20px;
 #height:auto;
