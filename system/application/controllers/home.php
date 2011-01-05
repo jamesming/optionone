@@ -50,7 +50,8 @@ class Home extends Controller {
 
 function index(){
 	$data['controller'] = 'home';
-	$this->load->view('home/index_view', $data);
+	//$this->load->view('home/index_view', $data);
+	$this->load->view('home/index_inside_view');
 }
 	
 
@@ -66,15 +67,6 @@ function index(){
  **/ 
 
 function index_inside(){
-	
-//	$urlParts = explode('.', $_SERVER['HTTP_HOST']);
-//	
-//	echo '<pre>';print_r(  $urlParts   );echo '</pre>';  
-	
-	//exit;
-	
-	
-
 	
 	$this->load->view('home/index_inside_view');
 

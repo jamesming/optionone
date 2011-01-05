@@ -12,7 +12,7 @@
 --> 
 
 <div   class='container'  style='
-	height:140px;
+	padding:15px 0px;
 	'  >
 	
 	<img   style='
@@ -48,9 +48,7 @@
 **/
 --> 
 
-<div   class='container'   style='
-	margin:0px 0px 0px 0px;
-	'  >
+<div   class='container' 
 	
 		<img   style='
 		float:left;
@@ -159,7 +157,7 @@
 
 		<style>
 			.subhead_A_div{
-			margin:0px 0px 30px 0px;	
+			margin:20px 0px;	
 			}
 				
 			.subhead_A{
@@ -168,18 +166,27 @@
 				font-weight: bold;
 				letter-spacing: -0.4pt;
 				line-height: 1.2;
-			}	
+			}
+			
+			.font_color_blue{
+			color:#0C698A;	
+			}
+			.font_color_green{
+			color:#088537;
+			}
+			.font_color_brick{
+			color:#901412;	
+			}
 		</style>
 		
 		
 <div  class='container'    style='
-	margin:20px 0px 0px 0px;
 	height:auto;	
 	'  >
 			
 	<div class='column span-8'     >
 		<div class='subhead_A_div'>
-			<font class='subhead_A'   style='color:#0C698A;'  >Straightforward process, from <!--accessment, to--> care, to billing, to service.</font>
+			<font class='subhead_A font_color_blue'    >Straightforward process, from <!--accessment, to--> care, to billing, to service.</font>
 		</div>
 		<img   style='
 		float:left;
@@ -190,7 +197,7 @@
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
 		<div class='subhead_A_div'>
-			<font class='subhead_A'   style='color:#088537'  >Qualified, experience, rigidly screened caregivers</font>
+			<font class='subhead_A font_color_green'    >Qualified, experience, rigidly screened caregivers</font>
 		</div>
 		<img   style='
 			float:left;
@@ -201,7 +208,7 @@
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
 		<div class='subhead_A_div'>
-			<font class='subhead_A'   style=' style='color:#901412'  '  >Attentive follow-up process with 24-7 service.</font>
+			<font class='subhead_A font_color_brick'      >Attentive follow-up process with 24-7 service.</font>
 		</div>
 		<img   style='
 		float:left;
@@ -222,6 +229,11 @@
 -->
 
 		<style>
+			
+		.subhead_B_div{
+			margin:20px 0px;	
+		}
+			
 		.subhead_B{
 			font-family: 'trebuchet MS', sans-serif;
 			font-size: 16px;
@@ -230,25 +242,25 @@
 			line-height: 0.6;
 		}	
 		</style>
-<div   class='container' style='
-	margin:20px 0px 0px 0px;	
-	'  >
+		
+		
+<div   class='container'   style='padding-bottom:60px'  >
 	
 
 			
-	<div class='column span-8'     >
+	<div class='column span-8 subhead_B_div'  >
 
-		<font class='subhead_B'><span   style='color:#0C698A'  >Our</span>&nbsp;<span  style='color:#088537'>Services</span></font><br><br>
+		<font class='subhead_B'><span   class='font_color_blue'  >Our</span>&nbsp;<span class='font_color_green'>Services</span></font><br><br>
 		This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 		
 	</div>
 	
-	<div class='column span-8'   style='border:0px solid gray'  >
+	<div class='column span-8 subhead_B_div'   style='border:0px solid gray'  >
 		<font class='subhead_B'><span   style='color:#0C698A'  >Why</span>&nbsp;<span  style='color:#088537'>OptionOne</span></font><br><br>
 		This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 	</div>	
 	
-	<div class='column span-8 last'   style='border:0px solid gray'  >
+	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >
 		
 		<img   style='
 		width:100%;
@@ -277,12 +289,10 @@
 
 
 <div   class='container' style='
-	
-	
-margin:80px 0px;
+
 padding:20px 20px;
-height:auto;
-width:auto;
+#height:auto;
+#width:auto;
 color:gray;
 background:lightblue;
 
