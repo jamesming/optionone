@@ -14,12 +14,12 @@
 
 
 //$config['base_url']	= "http://www.jamesming.com/optionone";
-$config['base_url']	= "http://192.168.1.102/optionone";
+//$config['base_url']	= "http://192.168.1.102/optionone";
 
 
 //$config['base_url']	= "http://example.com/";
 //$config['base_url']	= "http://127.0.0.1/prospace/";
-//$config['base_url']	= "http://www.prospace.com";
+$config['base_url']	= "http://www.ihcoption.com";
 
 /*
 |--------------------------------------------------------------------------

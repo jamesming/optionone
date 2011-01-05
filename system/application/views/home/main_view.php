@@ -43,11 +43,7 @@
 	
 	
 	
-	<img   style='
-	margin:0px 70px;
-	
-	'  
-	src='images/optionTab.jpg'>
+
 	
 	
 	
@@ -215,7 +211,7 @@
 			
 	<div class='column span-8'     >
 		<div class='subhead_A_div'>
-			<font class='subhead_A font_color_blue'    >Straightforward process, from <!--accessment, to--> care, to billing, to service.</font>
+			<font class='subhead_A font_color_blue'    >Straightforward process, from assessment to care...billing to service.</font>
 		</div>
 		<img   style='
 		float:left;
@@ -226,7 +222,7 @@
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
 		<div class='subhead_A_div'>
-			<font class='subhead_A font_color_green'    >Qualified, experience, rigidly screened caregivers</font>
+			<font class='subhead_A font_color_green'    >Qualified, experience, and rigidly screened caregivers.</font>
 		</div>
 		<img   style='
 			float:left;
