@@ -29,13 +29,6 @@ class Home extends Controller {
 
 	}
 	
-  
-/*
-|--------------------------------------------------------------------------
-|                       VIEW SECTION 
-|--------------------------------------------------------------------------
-*/
-
 
 /**
  * index page for home controller
@@ -50,8 +43,7 @@ class Home extends Controller {
 
 function index(){
 	$data['controller'] = 'home';
-	//$this->load->view('home/index_view', $data);
-	$this->load->view('home/index_inside_view');
+	$this->load->view('home/main_view');
 }
 	
 
@@ -63,7 +55,6 @@ function index(){
  * @author James Ming <jamesming@gmail.com>
  * @path /index.php/home/index_inside
  * @access public
- * @codeigniter_library form_validation
  **/ 
 
 function index_inside(){
@@ -71,6 +62,8 @@ function index_inside(){
 	$this->load->view('home/index_inside_view');
 
 }
+
+
 
   
 	
