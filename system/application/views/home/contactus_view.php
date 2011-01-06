@@ -99,11 +99,12 @@
 
 	<div class='column span-2' >&nbsp;
 	</div>
-	<div class='column span-20'>
+	<div class='column span-20' style='height:50px;'    >
 		<p  class=' font_color_blue'   style='
 			text-align:center;
 			font-weight:bold;
 			font-size:24px;
+			
 			'  >
 		Contact Us Now
 		</p>
@@ -112,6 +113,30 @@
 	</div>		
 	
 </div>
+<style>
+#form_table td{
+height:40px;
+}
+.form_style{
+	border:1px solid gray;
+#	font-size:27px;
+	width:294px;
+	height:25px;
+	padding-left:10px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+}
+</style>
 
 <div   class='container'     style='padding-bottom:40px'   >
 
@@ -120,7 +145,7 @@
 	<div class='column span-20'>
 		
 		
-		<table>
+		<table id='form_table'>
 			<tr>
 				<td>Your Name
 				</td>
@@ -149,7 +174,7 @@
 				<td>Message
 				</td>
 				<td colspan=2>
-					<textarea>
+					<textarea  class='form_style ' >
 					</textarea>
 				</td>	
 			</tr>					
