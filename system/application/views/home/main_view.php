@@ -14,124 +14,33 @@
 	      $next.fadeIn().addClass('active');
 	      });
 	    }
+	    
+	    var cnt = 4352345450;
+	    
+	    function counter(){
+	    	
+//	    	        if (cnt < 20) {
+                    $('#displayCounter').html(cnt);
+                    cnt++;
+//                }
+//                else {
+//                    clearInterval(counter);
+//                    $('#displayCounter').html("Timeout!!");
+//                }
+	    	
+	    }
 	
 			$(document).ready(function() { 
 				setInterval('swapImages()', 5000);
+				setInterval('counter()', 1000);
 			});
 			 
 	</script>
 </head>
 
-<!--  
-/**
-*
-* Header
-*
-**/
---> 
-
-<div   class='container'  style='
-	padding:15px 0px;
-	'  >
-	
-	<img   style='
-	border:0px solid red;
-	float:left;
-	'  
-	src='images/logo.jpg'>
-	
-	
-	<img   style='
-	padding-top:30px;
-	padding-right:10px;
-	float:right;
-	'  
-	src='images/free_consultation.jpg'>
-</div>
-
-<!--  
-/**
-*
-* Menu
-*
-**/
---> 
-
-<div   class='container' >
-	
-		<img   style='
-		float:left;
-		'  
-		src='images/LeftHalfGradCircle.jpg'>
-
-		<div    style='
-			color:white;
-			float:left;
-			width:913px;
-			height:44px;
-			layer-background-image: url(images/middleMenuFill.jpg);
-			background-image: url(images/middleMenuFill.jpg);
-			'  >
-			
-			<style>
-			#menu1 {
-			  width:908px;
-			  padding:7px 0px 0px 0px;
-			  margin:0 auto; 
-			  list-style-type:none;
-			  }
-			
-			#menu1 li {
-			  float:left;
-			  width:98px;
-			  #border:1px solid #fff; 
-			  }
-			
-			#menu1 a {
-			  display:block;
-			  width:98px;
-			  color:white; 
-			  #background:#d4d4d4; 
-			  text-align:center; 
-			  padding:4px 0; 
-			  text-decoration:none; 
-			  float:left; 
-			  }
-			
-			#menu1 a:hover {
-			  color:darkblue; 
-			  #background:#08c;
-			  }
-			</style>
-						
-			<ul id="menu1">
-			<li><a href="#nogo">Home</a></li>
-			<li><a href="#nogo">About Us</a></li>
-			<li><a href="#nogo">Why Us</a></li>
-			<li><a href="#nogo">Our Caregivers</a></li>
-			<li><a href="#nogo">Our Team</a></li>
-			<li><a href="#nogo">Help for Families</a></li>
-			<li><a href="#nogo">Environment</a></li>
-			<li><a href="#nogo">FAQs</a></li>
-			<li><a href="#nogo">Contact Us</a></li>
-			
-			
-			
-			
-			
-			</ul>
-
-			
-		</div>
-		
-		
-		
-		<img   style='
-		float:left;
-		'  
-		src='images/RightHalfGradCircle.jpg'>				
-		
-</div>
+<?php     
+			$this->load->view('header/optionone_header.php');
+?>
 
 <!--  
 /**
@@ -174,29 +83,6 @@
 
 --> 
 
-		<style>
-			.subhead_A_div{
-			margin:20px 0px;	
-			}
-				
-			.subhead_A{
-				font-family: 'trebuchet MS', sans-serif;
-				font-size: 16px;
-				font-weight: bold;
-				letter-spacing: -0.4pt;
-				line-height: 1.2;
-			}
-			
-			.font_color_blue{
-			color:#0C698A;	
-			}
-			.font_color_green{
-			color:#088537;
-			}
-			.font_color_brick{
-			color:#901412;	
-			}
-		</style>
 		
 		
 <div  class='container'    style='
@@ -247,20 +133,7 @@
 **/
 -->
 
-		<style>
-			
-		.subhead_B_div{
-			margin:20px 0px;	
-		}
-			
-		.subhead_B{
-			font-family: 'trebuchet MS', sans-serif;
-			font-size: 16px;
-			font-weight: bold;
-			letter-spacing: -0.4pt;
-			line-height: 0.6;
-		}	
-		</style>
+
 		
 		
 <div   class='container'   style='padding-bottom:60px'  >
@@ -288,10 +161,23 @@
 		src='images/serving.jpg'>	
 		
 		
+		<div id='displayCounter' class='rounded_border'  style='
+				border:1px solid;
+        font-size:42px;
+        font-family:Georgia;
+        text-align:center;
+        padding:15px 0px;
+			'  >
+		</div>
+		<!--
 		<img   style='
 		width:100%;
 		'  
-		src='images/counter.jpg'>			
+		src='images/counter.jpg'>		
+		-->
+		
+		
+			
 	</div>
 	
 </div>
@@ -306,18 +192,9 @@
 
 --> 
 
-
-<div   class='container rounded_top_right rounded_top_left' style='
-
-padding:20px 20px;
-#height:auto;
-#width:auto;
-color:gray;
-background:lightblue;
-
-	
-	'  >&#169; 2011 OptionONE Healthcare Management LLC.
-</div>
+<?php     
+			$this->load->view('footer/optionone_footer.php');
+?>
 
 
 <?php

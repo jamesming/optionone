@@ -63,7 +63,38 @@ function index_inside(){
 
 }
 
+/**
+ * about us
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/aboutus
+ * @access public
+ **/ 
 
+function aboutus(){
+	
+	$this->load->view('home/aboutus_view');	
+	
+}
+
+
+/**
+ * contact us
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/contactus
+ * @access public
+ **/ 
+
+function contactus(){
+	
+	$this->load->view('home/contactus_view');	
+	
+}
 
   
 	

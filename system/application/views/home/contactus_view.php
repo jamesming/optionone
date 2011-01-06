@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script type="text/javascript" language="Javascript" src = "<?php echo  base_url();   ?>js/jquery.js"></script>
+<head>
+<?php     	$this->load->view('header/header_css.php');  ?>
+	<script type="text/javascript" language="Javascript">
+		
+			$(document).ready(function() { 
+			});
+			 
+	</script>
+</head>
+<?php     
+			$this->load->view('header/optionone_header.php');
+?>
+
+
+
+<!--  
+/**
+*
+* Main Image Div
+*
+**/
+
+-->
+<style>
+	#myGallery img{
+		margin:20px 0px 0px 0px;
+		float:left;
+		width:100%;
+    display:none;
+    #position:absolute;
+    #top:0;
+    #left:0;
+	}
+	#myGallery img.active{
+      display:block;
+    }
+</style>
+<div class='container'   style='height:300px'   >
+	<div id="myGallery">
+		<img  class='active'  src='<?php echo base_url()    ?>images/Contact_Us_Banner.jpg'>	
+		<img   src='images/mainImage2.jpg'>	
+	</div>
+</div>
+
+
+
+
+<div   class='container'   style='padding-bottom:10px'  >
+
+	<div class='column span-2 subhead_B_div'  >
+		
+		<img src='<?php echo base_url()    ?>images/woman.jpg'>	
+		
+		
+		
+	</div>
+			
+	<div class='column span-14 subhead_B_div'  >
+			
+		<p>
+		<font class='subhead_B'><span   class='font_color_blue'  >Contact Us</span></font><br><br>
+		This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+		
+		
+	</div>
+
+	
+	<div class='column span-8 last'   >
+		
+		<img   style='
+		float:right;
+		width:90%;
+		margin:19px 0px;
+		
+		'  
+		src='<?php echo base_url()    ?>images/address.jpg'>	
+		
+	
+			
+	</div>
+	
+</div>
+
+
+<!--  
+*
+*  FORM
+*
+-->
+
+
+
+<div   class='container'     >
+
+	<div class='column span-2' >&nbsp;
+	</div>
+	<div class='column span-20'>
+		<p  class=' font_color_blue'   style='
+			text-align:center;
+			font-weight:bold;
+			font-size:24px;
+			'  >
+		Contact Us Now
+		</p>
+	</div>	
+	<div class='column span-2 last'>&nbsp;
+	</div>		
+	
+</div>
+
+<div   class='container'     style='padding-bottom:40px'   >
+
+	<div class='column span-2' >&nbsp;
+	</div>
+	<div class='column span-20'>
+		
+		
+		<table>
+			<tr>
+				<td>Your Name
+				</td>
+				<td>
+					<input class='form_style smaller' name="" id="" type="" value="">
+				</td>
+				<td>
+					<input class='form_style smaller' name="" id="" type="" value="">
+				</td>		
+			</tr>
+			<tr>
+				<td>Your Email
+				</td>
+				<td colspan=2>
+					<input class='form_style' name="" id="" type="" value="">
+				</td>	
+			</tr>		
+			<tr>
+				<td>Your Phone Number
+				</td>
+				<td colspan=2>
+					<input class='form_style' name="" id="" type="" value="">
+				</td>	
+			</tr>					
+			<tr>
+				<td>Message
+				</td>
+				<td colspan=2>
+					<textarea>
+					</textarea>
+				</td>	
+			</tr>					
+			
+			
+				
+			
+		</table>
+		
+	</div>	
+
+	<div class='column span-2 last'>&nbsp;
+	</div>		
+	
+</div>
+
+
+<?php     
+			$this->load->view('footer/optionone_footer.php');
+?>
+
+
+<?php
+/* End of file myfile.php */ 
+/* Location: ./system/modules/mymodule/myfile.php */ 
