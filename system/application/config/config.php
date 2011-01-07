@@ -11,9 +11,12 @@
 |	http://example.com/
 |
 */
-
+/*
 if( $_SERVER['HTTP_HOST'] == 'www.ihcoption.com' ){
 	$config['base_url']	= "http://www.ihcoption.com";
+*/	
+if( $_SERVER['HTTP_HOST'] == 'www.jamesming.com' ){
+	$config['base_url']	= "http://www.jamesming.com/optionone";	
 }else{
 	$config['base_url']	= "http://192.168.1.102/optionone";
 };
