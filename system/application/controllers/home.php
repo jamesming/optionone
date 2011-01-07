@@ -86,7 +86,7 @@ function get(){
 	$files = $this->my_database_model->select_from_table( 
 	$table, $select_what, $where_array );
 	
-	echo $files[0]->$field ;
+	echo nl2br($files[0]->$field);
 	
 }
 

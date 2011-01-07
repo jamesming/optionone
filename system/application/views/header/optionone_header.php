@@ -13,7 +13,7 @@ $(document).ready(function() {
 						table: $('body').attr('id'),
 						field: $(this).attr('id')
 						},function(data) {
-								$span_to_update.text(data);
+								$span_to_update.html(data);
 						});
  					
 			
