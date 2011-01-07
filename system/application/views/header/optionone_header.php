@@ -29,7 +29,7 @@ $(document).ready(function() {
 	
 	$('.large_box_link').fancyZoom().click(function(event) {
 		
-				var form_elements = "<textarea  id='textarea_box_used_in_fancyzoom'>" + $(this).html() + "</textarea><input onclick=\"post($(this).prev().val(),'" + $(this).attr('id') + "')\" name='submit' id='submit' type='button' value='submit'>";
+				var form_elements = "<textarea  id='textarea_box_used_in_fancyzoom'>" + $(this).text() + "</textarea><input onclick=\"post($(this).prev().val(),'" + $(this).attr('id') + "')\" name='submit' id='submit' type='button' value='submit'>";
 				
 				$('#form0').empty().html(
 						form_elements
@@ -47,7 +47,7 @@ function post(text,field){
 		text: text
 		},function(data) {
 				$('#zoom_close').click();
-				$('#'+field).html(text);
+				$('#'+field).text(text);
 		});
 
 }
