@@ -30,7 +30,7 @@
 			
 	</script>
 </head>
-<body id='main'>
+<body id='aboutus'>
 <?php     
 			$this->load->view('header/optionone_header.php');
 ?>
@@ -54,6 +54,14 @@
 
 
 
+<!--  
+/**
+*
+* middle panel
+*
+**/
+
+-->
 
 <div   class='container'   style='padding-bottom:60px'  >
 
@@ -63,7 +71,7 @@
 		
 		<p>
 		<font class='subhead_B'><span   class='font_color_blue'  >About Us</span></font><br><br>
-		<span id='aboutus' href="#large_box" class='large_box_link cursor_pointer '  >This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+		<span id='aboutus_span' href="#large_box" class='large_box_link cursor_pointer '  >This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
 		</p>
 		
 		<p>
@@ -83,44 +91,15 @@
 		
 		
 	</div>
-
 	
-	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >
-		
-		<img   style='
-		float:right;
-		width:90%;
-		margin:19px 0px;
-		
-		'  
-		src='<?php echo base_url()    ?>images/About_Us_Image_R.jpg'>	
-		
-		
-		<img   style='
-		width:100%;
-		margin:19px 0px;
-		'  
-		src='<?php echo base_url()    ?>images/serving.jpg'>			
-		
-		
-		<div id='displayCounter' class='rounded_border'  style='
-				border:1px solid;
-        font-size:42px;
-        font-family:Georgia;
-        text-align:center;
-        padding:15px 0px;
-			'  >
-		</div>
-		<!--
-		<img   style='
-		width:100%;
-		'  
-		src='images/counter.jpg'>		
-		-->
-		
-		
-			
-	</div>
+	
+	
+<?php     
+			$this->load->view('side/right_side.php');
+?>
+
+
+
 	
 </div>
 

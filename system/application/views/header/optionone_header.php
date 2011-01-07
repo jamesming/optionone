@@ -328,20 +328,20 @@ color:#901412;
 		<img   style='
 		float:left;
 		'  
-		src='<?php echo base_url(); ?>images/LeftHalfGradCircle.jpg'>
+		src='<?php echo base_url(); ?>images/Menu_L.jpg'>
 
 		<div    style='
 			color:white;
 			float:left;
-			width:913px;
-			height:44px;
-			layer-background-image: url(<?php echo base_url(); ?>images/middleMenuFill.jpg);
-			background-image: url(<?php echo base_url(); ?>images/middleMenuFill.jpg);
+			width:900px;
+			height:45px;
+			layer-background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
+			background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
 			'  >
 			
 			<style>
 			#menu1 {
-			  width:908px;
+			  width:900px;
 			  padding:7px 0px 0px 0px;
 			  margin:0 auto; 
 			  list-style-type:none;
@@ -372,11 +372,11 @@ color:#901412;
 						
 			<ul id="menu1">
 			<li><a href="<?php echo base_url()    ?>">Home</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/aboutus">About Us</a></li>
-			<li><a href="#nogo">Help for Families</a></li>
-			<li><a href="#nogo">Employment</a></li>
-			<li><a href="#nogo">FAQs</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/contactus">Contact Us</a></li>
+			<li><a href="<?php echo base_url()    ?>/index.php/home/aboutus">About</a></li>
+			<li><a href="<?php echo base_url()    ?>/index.php/home/services">Services</a></li>
+			<li><a href="<?php echo base_url()    ?>/index.php/home/faq">FAQs</a></li>
+			<li><a href="<?php echo base_url()    ?>/index.php/home/employment">Employment</a></li>
+			<li><a href="<?php echo base_url()    ?>/index.php/home/contactus">Contact</a></li>
 			</ul>
 			
 		</div>
@@ -384,7 +384,7 @@ color:#901412;
 		<img   style='
 		float:left;
 		'  
-		src='<?php echo base_url(); ?>images/RightHalfGradCircle.jpg'>				
+		src='<?php echo base_url(); ?>images/Menu_R.jpg'>				
 		
 </div>
 

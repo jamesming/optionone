@@ -90,7 +90,7 @@
 		float:left;
 		width:100%;
 		'  
-		src='images/straightForward.jpg'>			
+		src='images/Home_Image_1.jpg'>			
 	</div>
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
@@ -101,7 +101,7 @@
 			float:left;
 			width:100%;
 			'  
-			src='images/qualitfied.jpg'>				
+			src='images/Home_Image_2.jpg'>				
 	</div>	
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
@@ -112,7 +112,7 @@
 		float:left;
 		width:100%;
 		'  
-		src='images/attentive.jpg'>			
+		src='images/Home_Image_3.jpg'>			
 		
 	</div>
 	
@@ -151,17 +151,15 @@
 		width:100%;
 		margin:19px 0px;
 		'  
-		src='images/serving.jpg'>	
+		src='images/Serving_Area.jpg'>	
 		
 		
-		<div id='displayCounter' class='rounded_border'  style='
-				border:1px solid;
-        font-size:42px;
-        font-family:Georgia;
-        text-align:center;
-        padding:15px 0px;
-			'  >
-		</div>
+
+		
+		<?php     
+					$this->load->view('side/counter_div.php');
+		?>
+		
 		<!--
 		<img   style='
 		width:100%;

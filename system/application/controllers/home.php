@@ -201,6 +201,56 @@ function aboutus(){
 	
 }
 
+/**
+ * services
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/services
+ * @access public
+ **/ 
+
+function services(){
+	
+	$this->load->view('home/services_view');	
+	
+}
+
+
+/**
+ * Employment
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/employment
+ * @access public
+ **/ 
+
+function employment(){
+	
+	$this->load->view('home/employment_view');	
+	
+}
+
+
+/**
+ * faq
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/faq
+ * @access public
+ **/ 
+
+function faq(){
+	
+	$this->load->view('home/faq_view');	
+	
+}
+
 
 /**
  * contact us
