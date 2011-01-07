@@ -6,11 +6,13 @@
 <?php     	$this->load->view('header/header_css.php');  ?>
 	<script type="text/javascript" language="Javascript">
 		
-			$(document).ready(function() { 
+			$(document).ready(function() {
+			 
 			});
 			 
 	</script>
 </head>
+<body id='main'>
 <?php     
 			$this->load->view('header/optionone_header.php');
 ?>
@@ -25,20 +27,7 @@
 **/
 
 -->
-<style>
-	#myGallery img{
-		margin:20px 0px 0px 0px;
-		float:left;
-		width:100%;
-    display:none;
-    #position:absolute;
-    #top:0;
-    #left:0;
-	}
-	#myGallery img.active{
-      display:block;
-    }
-</style>
+
 <div class='container'   style='height:300px'   >
 	<div id="myGallery">
 		<img  class='active'  src='<?php echo base_url()    ?>images/Contact_Us_Banner.jpg'>	
@@ -63,7 +52,7 @@
 			
 		<p>
 		<font class='subhead_B'><span   class='font_color_blue'  >Contact Us</span></font><br><br>
-		This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<span id='ourteam' href="#large_box" class='large_box_link cursor_pointer '  >This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
 		</p>
 		
 		
@@ -196,7 +185,7 @@ height:40px;
 			$this->load->view('footer/optionone_footer.php');
 ?>
 
-
+</body >
 <?php
 /* End of file myfile.php */ 
 /* Location: ./system/modules/mymodule/myfile.php */ 

@@ -64,6 +64,128 @@ function index_inside(){
 }
 
 /**
+ * get
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @uses My_database_model::select_from_table()
+ * @path /index.php/home/get
+ * @access public
+ **/ 
+
+function get(){
+	
+	$table = $this->input->post('table');
+	$field = $this->input->post('field');
+
+	$select_what =  $field;
+	
+	$where_array = array('id' => 1 );
+
+	$files = $this->my_database_model->select_from_table( 
+	$table, $select_what, $where_array );
+	
+	echo $files[0]->$field ;
+	
+}
+
+
+
+/**
+ * update
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @uses My_database_model::create_table_with_fields()
+ * @uses My_database_model::add_column_to_table_if_exist()
+ * @uses My_database_model::insert_table()
+ * @uses My_database_model::get_primary_key()
+ * @path /index.php/home/update
+ * @access public
+ **/ 
+
+function update(){
+	
+	$table = $this->input->post('table');
+	$field = $this->input->post('field');
+	$text = $this->input->post('text');
+
+	/**
+	 * Set up the table and the fields
+	 *
+	 **/ 
+	
+	$fields_array = array(
+	                        'id' => array(
+	                                                 'type' => 'INT',
+	                                                 'unsigned' => TRUE,
+	                                                 'auto_increment' => TRUE
+	                                      )
+	                );
+	                
+	$primary_key = 'id';
+	
+	$this->my_database_model->create_table_with_fields($table, $primary_key, $fields_array);
+	
+	$fields_array = array(
+	                        $field => array(
+	                                                 'type' => 'BLOB'
+	                                        ),
+	                        'created' => array(
+	                                                 'type' => 'DATETIME'
+	                                        ),
+	                        'updated' => array(
+	                                                 'type' => 'DATETIME'
+	                                        )                                       
+	                                        
+	                );
+	
+	$this->my_database_model->add_column_to_table_if_exist($table, $fields_array);
+	
+	
+	/**
+	 * Insert into table if not already exist otherwise do an update
+	 *
+	 **/ 
+
+			
+	if( $this->my_database_model->get_primary_key( $table, $where_field = 'id', 1) == 1){
+
+				$set_what_array = array(
+										$field => $text
+										);			
+								
+				$this->my_database_model->update_table( $table, $primary_key = 1, $set_what_array );
+
+
+
+	}else{
+
+							$insert_what = array(
+							$field 		 => $text
+							);
+							
+							$primary_key = $this->my_database_model->insert_table(
+															$table, 
+															$insert_what
+															);
+
+
+	};
+
+
+	
+	$data = array('field' => $field, 'text' => $text);
+	
+	$this->load->view('home/update_view', $data);	
+	
+}
+
+
+
+/**
  * about us
  *
  * {@source }

@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<script type="text/javascript" language="Javascript" src = "<?php echo  base_url();   ?>js/jquery.js"></script>
+	
 <head>
 <?php     	$this->load->view('header/header_css.php');  ?>
 	<script type="text/javascript" language="Javascript">
@@ -31,16 +32,22 @@
 	    }
 	
 			$(document).ready(function() { 
+				
 				setInterval('swapImages()', 5000);
 				setInterval('counter()', 1000);
+				
+									
 			});
+			
 			 
 	</script>
 </head>
-
+<body id='main'>
 <?php     
 			$this->load->view('header/optionone_header.php');
 ?>
+
+
 
 <!--  
 /**
@@ -48,22 +55,8 @@
 * Main Image Div
 *
 **/
-
 -->
-<style>
-	#myGallery img{
-		margin:20px 0px 0px 0px;
-		float:left;
-		width:100%;
-    display:none;
-    #position:absolute;
-    #top:0;
-    #left:0;
-	}
-	#myGallery img.active{
-      display:block;
-    }
-</style>
+
 <div class='container'   style='height:300px'   >
 	<div id="myGallery">
 		<img  class='active'  src='images/mainImage.jpg'>	
@@ -143,13 +136,13 @@
 	<div class='column span-8 subhead_B_div'  >
 
 		<font class='subhead_B'><span   class='font_color_blue'  >Our</span>&nbsp;<span class='font_color_green'>Services</span></font><br><br>
-		This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<span id='ourservice' href="#large_box" class='large_box_link cursor_pointer '  >Cras non vulputate elit. Duis ultricies neque a mauris sollicitudin ut blandit enim aliquet. Sed eget laoreet nibh. Fusce euismod sapien id sem volutpat vel iaculis orci blandit. Donec quis feugiat mauris. Sed a cursus felis. Phasellus rhoncus leo id mi convallis ultrices. Vivamus arcu dolor, porttitor at laoreet ut, condimentum quis libero. Curabitur lectus nisl, luctus nec consequat et, auctor non diam. Sed et adipiscing metus. Sed in mauris mattis felis volutpat convallis pulvinar ac mauris. Vivamus enim turpis, bibendum nec consequat quis, sodales vel diam. Nam accumsan pretium tellus, et rhoncus libero tristique sit amet. Maecenas sollicitudin velit sem. Ut arcu augue, pellentesque vitae venenatis et, convallis scelerisque diam. In commodo malesuada libero, id suscipit urna congue non. Sed quis sem ut dui vulputate auctor. Aenean porttitor magna quis tortor scelerisque sed hendrerit massa eleifend. Cras turpis lectus, molestie in dignissim id, tincidunt eu metus. Duis libero tellus, eleifend id tempus at, blandit pulvinar augue.</span>
 		
 	</div>
 	
-	<div class='column span-8 subhead_B_div'   style='border:0px solid gray'  >
+	<div class='column span-8 subhead_B_div '   style='border:0px solid gray'  >
 		<font class='subhead_B'><span   style='color:#0C698A'  >Why</span>&nbsp;<span  style='color:#088537'>OptionOne</span></font><br><br>
-		This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<span id='whyoption' href="#large_box" class='large_box_link cursor_pointer '  >Nunc sit amet feugiat arcu. Morbi dictum mollis pharetra. Suspendisse sollicitudin lorem at est dignissim tempus. Nullam eget massa id velit vestibulum vulputate sed non mi. Curabitur cursus blandit augue at imperdiet. Maecenas ac dolor dolor, eget rhoncus augue. Ut ante risus, faucibus nec sagittis ac, consequat a elit. Aenean porta imperdiet neque, eu porta nulla iaculis a. Vestibulum id ante tellus, ac suscipit massa. Etiam sit amet ligula ut quam porttitor gravida id eu arcu. Nunc ligula erat, rutrum ac sagittis sit amet, commodo quis purus. Cras a est sit amet diam venenatis tempor. Mauris tempus, ante id sagittis facilisis, tortor libero fermentum orci, nec tincidunt metus orci in mauris.</span>
 	</div>	
 	
 	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >
@@ -196,7 +189,7 @@
 			$this->load->view('footer/optionone_footer.php');
 ?>
 
-
+</body>
 <?php
 /* End of file myfile.php */ 
 /* Location: ./system/modules/mymodule/myfile.php */ 

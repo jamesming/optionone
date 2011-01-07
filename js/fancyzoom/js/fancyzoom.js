@@ -2,7 +2,7 @@
 $.fn.fancyZoom = function(options){
 
   var options   = options || {};
-  var directory = options && options.directory ? options.directory : '../../js/fancyzoom/images';
+  var directory = options && options.directory ? options.directory : 'js/fancyzoom/images';
   var zooming   = false;
 
   if ($('#zoom').length == 0) {
@@ -30,8 +30,8 @@ $.fn.fancyZoom = function(options){
                       </tr> \
                     </tbody> \
                   </table> \
-                  <a href="#" title="Close" id="zoom_close" style="position:absolute; top:20; left:810;"> \
-                    <img src="' + directory + '/closebox.' + ext + '" alt="Close" style="border:none; margin:0; padding:0;" /> \
+                  <a href="#" title="Close" id="zoom_close" style="position:absolute; top:20px; left:510px;"> \
+                    <img  src="' + directory + '/closebox.' + ext + '" alt="Close" style=" margin:0; padding:0;" /> \
                   </a> \
                 </div>';
 

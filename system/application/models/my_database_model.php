@@ -21,6 +21,10 @@ function My_database_model(){
     parent::Model();
     
     
+    
+    
+    
+    
 /*        
 		$newdata = array(
 		                   'username'  => 'johndoe',
@@ -47,6 +51,66 @@ function My_database_model(){
 	// $this->update_table( $table, $primary_key, $set_what_array );
 		
 }
+
+
+
+
+/**
+ * Create table
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @access public
+ * @codeigniter_library database
+ * @param string $table
+ * @param string $primary_key
+ * @param array $fields_array
+ * @return bool */
+ 
+function create_table_with_fields($table, $primary_key, $fields_array){
+
+	$this->load->dbforge();
+	$this->dbforge->add_field($fields_array);
+	$this->dbforge->add_key($primary_key, TRUE);
+	
+	/**
+	 * Returns TRUE/FALSE based on success or failure:
+	 */
+	return $this->dbforge->create_table($table, TRUE); // Only CREATE TABLE IF NOT EXISTS 
+}
+
+
+
+/**
+ * Add column to table
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @access public
+ * @codeigniter_library database
+ * @param string $table
+ * @param array $fields_array
+ * @return bool */
+ 
+function add_column_to_table_if_exist($table, $fields_array){
+
+	$this->load->dbforge();
+	
+	foreach(  $fields_array as $field => $value){
+		
+		if( $this->db->field_exists($field, $table ) == FALSE){
+			
+			$this->dbforge->add_column($table, array($field => $value) );
+			
+		};
+		
+		
+	}
+
+}
+
 
 
 /**
