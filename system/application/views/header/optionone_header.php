@@ -314,7 +314,7 @@ color:#901412;
 	
 	<img   style='
 	padding-top:30px;
-	padding-right:10px;
+	padding-right:0px;
 	float:right;
 	'  
 	src='<?php echo base_url(); ?>images/free_consultation.jpg'>
@@ -338,7 +338,7 @@ color:#901412;
 		<div    style='
 			color:white;
 			float:left;
-			width:900px;
+			width:908px;
 			height:45px;
 			layer-background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
 			background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
@@ -346,7 +346,7 @@ color:#901412;
 			
 			<style>
 			#menu1 {
-			  width:900px;
+			  width:908px;
 			  padding:7px 0px 0px 0px;
 			  margin:0 auto; 
 			  list-style-type:none;

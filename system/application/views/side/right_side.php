@@ -13,7 +13,7 @@
 		width:100%;
 		margin:19px 0px;
 		'  
-		src='<?php echo base_url()    ?>images/serving.jpg'>			
+		src='<?php echo base_url()    ?>images/Serving_Area.jpg'>			
 		
 		
 		<?php     
