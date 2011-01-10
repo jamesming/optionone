@@ -114,7 +114,7 @@ function get(){
 		$table, $select_what, $where_array );
 		
 		if( $files[0]->$field != ''){
-				echo nl2br($files[0]->$field);			
+				echo $files[0]->$field;			
 		}else{
 				echo "Please enter some text";
 		};
