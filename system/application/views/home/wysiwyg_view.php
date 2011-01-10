@@ -61,7 +61,7 @@
 								
 							});
 						parent.document.getElementById('<?php echo $field;    ?>').innerHTML = mbox.get_html();
-						parent.close_fancyzoom();
+						// parent.close_fancyzoom();
 						
 				});	
 				
