@@ -83,8 +83,8 @@
 	'  >
 			
 	<div class='column span-8'     >
-		<div class='subhead_A_div'>
-			<font class='subhead_A font_color_blue'    >Straightforward process, from assessment to care...billing to service.</font>
+		<div id='straightforward_head'  href="#large_box" class=' large_box_link cursor_pointer'>
+			
 		</div>
 		<img   style='
 		float:left;
@@ -94,8 +94,7 @@
 	</div>
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
-		<div class='subhead_A_div'>
-			<font class='subhead_A font_color_green'    >Qualified, experience, and rigidly screened caregivers.</font>
+		<div id='qualified_head'  href="#large_box"  class=' large_box_link cursor_pointer' >
 		</div>
 		<img   style='
 			float:left;
@@ -105,8 +104,7 @@
 	</div>	
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
-		<div class='subhead_A_div'>
-			<font class='subhead_A font_color_brick'      >Attentive follow-up process with 24-7 service.</font>
+		<div id='attentive_head'  href="#large_box" class=' large_box_link cursor_pointer'>
 		</div>
 		<img   style='
 		float:left;
@@ -135,13 +133,13 @@
 			
 	<div class='column span-8 subhead_B_div'  >
 
-		<font class='subhead_B'><span   class='font_color_blue'  >Our</span>&nbsp;<span class='font_color_green'>Services</span></font><br><br>
+
 		<span id='ourservice' href="#large_box" class='large_box_link cursor_pointer '  ></span>
 		
 	</div>
 	
 	<div class='column span-8 subhead_B_div '   style='border:0px solid gray'  >
-		<font class='subhead_B'><span   style='color:#0C698A'  >Why</span>&nbsp;<span  style='color:#088537'>OptionOne</span></font><br><br>
+
 		<span id='whyoption' href="#large_box" class='large_box_link cursor_pointer '  ></span>
 	</div>	
 	

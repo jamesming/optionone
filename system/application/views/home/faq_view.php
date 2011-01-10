@@ -66,13 +66,10 @@
 <div   class='container'   style='padding-bottom:60px'  >
 
 			
-	<div class='column span-16 subhead_B_div'  >
+	<div class='column span-16' >
 		
 		
-		<p>
-		<font class='subhead_B'><span   class='font_color_blue'  >FAQs</span></font><br><br>
 		<span id='faq_span' href="#large_box" class='large_box_link cursor_pointer '  ></span>
-		</p>
 		
 	</div>
 	

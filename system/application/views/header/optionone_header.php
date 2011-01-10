@@ -228,38 +228,6 @@ $.fn.fancyZoom = function(options){
 
 
 <style>
-.subhead_A_div{
-margin:20px 0px;	
-}
-.subhead_A{
-	font-family: 'trebuchet MS', sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	letter-spacing: -0.4pt;
-	line-height: 1.2;
-}
-
-.font_color_blue{
-color:#0C698A;	
-}
-.font_color_green{
-color:#088537;
-}
-.font_color_brick{
-color:#901412;	
-}
-
-.subhead_B_div{
-	margin:20px 0px;	
-}
-	
-.subhead_B{
-	font-family: 'trebuchet MS', sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	letter-spacing: -0.4pt;
-	line-height: 0.6;
-}	
 #myGallery img{
 	margin:20px 0px 0px 0px;
 	float:left;
