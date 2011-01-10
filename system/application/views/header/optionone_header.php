@@ -2,61 +2,47 @@
 
 $(document).ready(function() { 
 	
-	
-	$('.large_box_link').each(
-	
-			function( i ){
- 
- 					var $span_to_update = $(this);
- 					
-					$.post("<?php echo base_url(). 'index.php/home/get'; ?>",{
-						table: $('body').attr('id'),
-						field: $(this).attr('id')
-						},function(data) {
-								if( data ){
-									$span_to_update.html(data);
-								}else{
-									$span_to_update.html('blah blah');
-								};
-								
-						});
- 					
-			
-			}
-	);
- 
-
-	
-	$('.large_box_link').fancyZoom().click(function(event) {
+		$('.large_box_link').each(
 		
-				var form_elements = "<textarea  id='textarea_box_used_in_fancyzoom'>" + $(this).text() + "</textarea><input onclick=\"post($(this).prev().val(),'" + $(this).attr('id') + "')\" name='submit' id='submit' type='button' value='submit'>";
-				
-				$('#form0').empty().html(
-						form_elements
-					); 
+				function( i ){
+	 
+	 					var $span_to_update = $(this);
+	 					
+						$.post("<?php echo base_url(). 'index.php/home/get'; ?>",{
+							table: $('body').attr('id'),
+							field: $(this).attr('id')
+							},function(data) {
+										$span_to_update.html(data);
+							});
+				}
+		).fancyZoom().click(function(event) {
 		
+			$("#iframe_content").attr('src','<?php echo base_url();    ?>index.php/home/wysiwyg/' + $('body').attr('id') + '/' + $(this).attr('id') );
 
 	});	
+
 });
-	
-function post(text,field){
 
-	$.post("<?php echo base_url(). 'index.php/home/update'; ?>",{
-		table: $('body').attr('id'),
-		field: field,
-		text: text
-		},function(data) {
-				$('#zoom_close').click();
-				$('#'+field).text(text);
-		});
 
-}
+function close_fancyzoom(){
+	$('#zoom_close').click();
+};
+
+
+
 	
-//**
+
+</script>
+
+<!--
 //*
 //* Fancyzoom Javascript
 //*
 //**
+-->
+
+<script>
+
 	
 (function($){
 $.fn.fancyZoom = function(options){
@@ -90,7 +76,7 @@ $.fn.fancyZoom = function(options){
                       </tr> \
                     </tbody> \
                   </table> \
-                  <a href="#" title="Close" id="zoom_close" style="position:absolute; top:20px; left:510px;"> \
+                  <a href="#" title="Close" id="zoom_close" style="position:absolute; top:20px; left:710px;"> \
                     <img  src="' + directory + '/closebox.' + ext + '" alt="Close" style=" margin:0; padding:0;" /> \
                   </a> \
                 </div>';
@@ -234,22 +220,17 @@ $.fn.fancyZoom = function(options){
 })(jQuery);
 
 
-
-
 </script>
 
+
+
+
+
+
 <style>
-#textarea_box_used_in_fancyzoom{ 
-	height:400px;
-	width:460px;
-	font-style:arial;
-	font-size:15px;
-	padding:8px;	
-}	
 .subhead_A_div{
 margin:20px 0px;	
 }
-	
 .subhead_A{
 	font-family: 'trebuchet MS', sans-serif;
 	font-size: 16px;
@@ -279,19 +260,69 @@ color:#901412;
 	letter-spacing: -0.4pt;
 	line-height: 0.6;
 }	
-	#myGallery img{
-		margin:20px 0px 0px 0px;
-		float:left;
-		width:100%;
-    display:none;
-    #position:absolute;
-    #top:0;
-    #left:0;
-	}
-	#myGallery img.active{
-      display:block;
-    }
+#myGallery img{
+	margin:20px 0px 0px 0px;
+	float:left;
+	width:100%;
+  display:none;
+  #position:absolute;
+  #top:0;
+  #left:0;
+}
+#myGallery img.active{
+    display:block;
+}
+#overlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height:100%;
+	text-align:center;
+	z-index: 1000;
+	background: #eeeeee 50% 50% repeat; opacity: .80;filter:Alpha(Opacity=80); 
+}
+
+.modal { 
+	 z-index: 10000;
+	 position: absolute;
+	 top: 100px;
+	 margin: 0 auto;
+	 background: #fff;
+	 border:1px solid #ccc;
+	 padding:10px;
+	 text-align:center
+}
 </style>
+
+
+<!--  
+/**
+*
+* Fancyzoom box
+*
+**/
+-->
+
+<div id="large_box"     >
+		<iframe id="iframe_content"   style="
+			width:700px;
+			height:500px;
+			margin: 0; 
+			padding: 0; 
+			border: 0px solid black;
+			" 
+			frameborder="0" src=""  >
+			
+		    <p>Your browser does not support iframes.</p>
+		    
+		</iframe>
+</div>
+
+
+
+
+
 
 <!--  
 /**
@@ -393,15 +424,3 @@ color:#901412;
 		
 </div>
 
-<!--  
-/**
-*
-* Fancyzoom box
-*
-**/
--->
-
-<div id="large_box"     >
-			<form id='form0' name='form0' action='done.php' style='width:500px; height:500px;'   >
-			</form>		
-</div>

@@ -71,7 +71,7 @@
 		
 		<p>
 		<font class='subhead_B'><span   class='font_color_blue'  >Services</span></font><br><br>
-		<span id='services_span' href="#large_box" class='large_box_link cursor_pointer '  >write something richie</span>
+		<span id='services_span' href="#large_box" class='large_box_link cursor_pointer '  ></span>
 		</p>
 		
 	</div>

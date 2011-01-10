@@ -251,8 +251,6 @@ function count_records( $table,  $where_array ){
 	return $query->num_rows();
 }
 
-
-
 /**
  * Validates if record exist
  *

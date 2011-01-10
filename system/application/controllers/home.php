@@ -63,6 +63,30 @@ function index_inside(){
 
 }
 
+
+/**
+ * iframe of WYSIWIG
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/wysiwig
+ * @access public
+ **/ 
+
+function wysiwyg(){
+	
+	$table = $this->uri->segment(3);
+	$field = $this->uri->segment(4);
+
+	$data = array('table' => $table, 'field' =>  $field);
+	
+	$this->load->view('home/wysiwyg_view', $data);
+	
+}
+
+
+
 /**
  * get
  *
@@ -79,14 +103,26 @@ function get(){
 	$table = $this->input->post('table');
 	$field = $this->input->post('field');
 
-	$select_what =  $field;
-	
-	$where_array = array('id' => 1 );
 
-	$files = $this->my_database_model->select_from_table( 
-	$table, $select_what, $where_array );
+	if( $this->db->field_exists($field, $table ) == TRUE){
 	
-	echo nl2br($files[0]->$field);
+		$select_what =  $field;
+		
+		$where_array = array('id' => 1 );
+	
+		$files = $this->my_database_model->select_from_table( 
+		$table, $select_what, $where_array );
+		
+		if( $files[0]->$field != ''){
+				echo nl2br($files[0]->$field);			
+		}else{
+				echo "Please enter some text";
+		};
+		
+	}
+	else{
+		echo "Please enter some text";	
+	}
 	
 }
 
