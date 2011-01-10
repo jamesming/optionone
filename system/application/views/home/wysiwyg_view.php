@@ -63,7 +63,7 @@
 						parent.document.getElementById('<?php echo $field;    ?>').innerHTML = mbox.get_html();
 						// parent.close_fancyzoom();
 						
-				});	
+				}).css({background:'green'}).text('Saved');	
 				
 				$.post("<?php echo base_url(). 'index.php/home/get'; ?>",{
 					table: '<?php echo $table;    ?>',
