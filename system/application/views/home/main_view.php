@@ -16,18 +16,11 @@
 	      });
 	    }
 	    
-	    var cnt = 39603845;
-	    
-	    function counter(){
-                    $('#displayCounter').html(cnt);
-                    cnt++;
-	    }
-	
+
 			$(document).ready(function() { 
 				
 				setInterval('swapImages()', 5000);
-				counter();
-				setInterval('counter()', 20000);
+
 				
 									
 			});

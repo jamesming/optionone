@@ -8,16 +8,10 @@
 <?php     	$this->load->view('header/header_css.php');  ?>
 	<script type="text/javascript" language="Javascript">
 		
-	    var cnt = 39603845;
-	    
-	    function counter(){
-                    $('#displayCounter').html(cnt);
-                    cnt++;
-	    }
+
 	    
 			$(document).ready(function() {
-				counter(); 
-				setInterval('counter()', 20000);
+
 			});
 			
 			

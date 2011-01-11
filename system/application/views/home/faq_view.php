@@ -8,23 +8,9 @@
 <?php     	$this->load->view('header/header_css.php');  ?>
 	<script type="text/javascript" language="Javascript">
 		
-	    var cnt = 4352345450;
-	    
-	    function counter(){
-	    	
-//	    	        if (cnt < 20) {
-                    $('#displayCounter').html(cnt);
-                    cnt++;
-//                }
-//                else {
-//                    clearInterval(counter);
-//                    $('#displayCounter').html("Timeout!!");
-//                }
-	    	
-	    }
-	    
+
 			$(document).ready(function() { 
-				setInterval('counter()', 1000);
+
 			});
 			
 			
