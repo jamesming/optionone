@@ -278,7 +278,7 @@ $.fn.fancyZoom = function(options){
 <div id="large_box"     >
 		<iframe id="iframe_content"   style="
 			width:700px;
-			height:500px;
+			height:640px;
 			margin: 0; 
 			padding: 0; 
 			border: 0px solid black;

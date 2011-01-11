@@ -16,7 +16,7 @@
 	
 			$(document).ready(function() { 
 				var mbox = $("#iframe_child_div_text_area").css({
-						height:"80%",
+						height:"84%",
 						width:"100%"
 						}).htmlbox({
 				    toolbars:[
