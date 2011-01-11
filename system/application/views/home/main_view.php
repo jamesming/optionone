@@ -16,25 +16,18 @@
 	      });
 	    }
 	    
-	    var cnt = 4352345450;
+	    var cnt = 39603845;
 	    
 	    function counter(){
-	    	
-//	    	        if (cnt < 20) {
                     $('#displayCounter').html(cnt);
                     cnt++;
-//                }
-//                else {
-//                    clearInterval(counter);
-//                    $('#displayCounter').html("Timeout!!");
-//                }
-	    	
 	    }
 	
 			$(document).ready(function() { 
 				
 				setInterval('swapImages()', 5000);
-				setInterval('counter()', 1000);
+				counter();
+				setInterval('counter()', 20000);
 				
 									
 			});
@@ -153,6 +146,10 @@
 		
 		
 
+
+
+		
+		
 		
 		<?php     
 					$this->load->view('side/counter_div.php');

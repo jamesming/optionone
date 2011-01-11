@@ -8,23 +8,16 @@
 <?php     	$this->load->view('header/header_css.php');  ?>
 	<script type="text/javascript" language="Javascript">
 		
-	    var cnt = 4352345450;
+	    var cnt = 39603845;
 	    
 	    function counter(){
-	    	
-//	    	        if (cnt < 20) {
                     $('#displayCounter').html(cnt);
                     cnt++;
-//                }
-//                else {
-//                    clearInterval(counter);
-//                    $('#displayCounter').html("Timeout!!");
-//                }
-	    	
 	    }
 	    
-			$(document).ready(function() { 
-				setInterval('counter()', 1000);
+			$(document).ready(function() {
+				counter(); 
+				setInterval('counter()', 20000);
 			});
 			
 			
