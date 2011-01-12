@@ -326,15 +326,24 @@ function create_table_for_form(){
 
 function insert_into_table_for_form(){
 	
-	echo '<pre>';print_r(  $table = $this->input->post  );echo '</pre>';  exit;
-	
 	$table = $this->input->post('table');
-	$field = $this->input->post('field');
-	$type_of_field = $this->input->post('type_of_field');
-	$constraint = $this->input->post('constraint');
-
-
 	
+	$fields = explode('&', $this->input->post('fields'));
+	
+	$i = 0;
+	
+	while($i < count($fields)){
+		
+		$field = explode('=', $fields[$i]);
+		$insert_what[ htmlspecialchars( urldecode( $field[0] )) ]  =  htmlspecialchars( urldecode( $field[1] ));
+		$i++;
+	}
+					
+	$primary_key = $this->my_database_model->insert_table(
+									$table, 
+									$insert_what
+									);
+
 }
 
 

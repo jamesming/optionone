@@ -1,17 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<script type="text/javascript" language="Javascript" src = "<?php echo  base_url();   ?>js/jquery.js"></script>
-<head>
-<?php     	$this->load->view('header/header_css.php');  ?>
-	<script type="text/javascript" language="Javascript">
-		
-			$(document).ready(function() {
-			 
-			});
-			 
-	</script>
-</head>
+<?php     
+			$this->load->view('header/form_header.php');
+?>
 <body id='employment'>
 <?php     
 			$this->load->view('header/optionone_header.php');
@@ -36,7 +25,7 @@
 
 
 
-<div   class='container'   style='padding-bottom:10px'  >
+<div   class='container'     style='margin-top:30px'   >
 
 	<div class='column span-2 '  >
 		
@@ -89,7 +78,7 @@
 			font-size:24px;
 			
 			'  >
-		Come Work For Us
+		Apply to work for us
 		</p>
 	</div>	
 	<div class='column span-2 last'>&nbsp;
@@ -121,6 +110,7 @@ height:40px;
 }
 </style>
 
+<form name='applicants' id='applicants'>
 <div   class='container'     style='padding-bottom:40px'   >
 
 	<div class='column span-2' >&nbsp;
@@ -133,36 +123,158 @@ height:40px;
 				<td>Your Name
 				</td>
 				<td>
-					<input class='form_style smaller' name="" id="" type="" value="">
+					<input  name="firstname" id="firstname" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
 				</td>
 				<td>
-					<input class='form_style smaller' name="" id="" type="" value="">
+					<input  name="lastname" id="lastname" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
 				</td>		
 			</tr>
 			<tr>
 				<td>Your Email
 				</td>
 				<td colspan=2>
-					<input class='form_style' name="" id="" type="" value="">
+					<input  name="email" id="email" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
 				</td>	
 			</tr>		
 			<tr>
 				<td>Your Phone Number
 				</td>
 				<td colspan=2>
-					<input class='form_style' name="" id="" type="" value="">
+					<input  name="phone" id="phone" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
 				</td>	
-			</tr>					
+			</tr>		
+			<tr>
+				<td>Your Address
+				</td>
+				<td colspan=2>
+					<input  name="address" id="address" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>		
+			
+			<tr>
+				<td>
+				</td>
+				<td>
+					<input  name="city" id="city" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
+				</td>
+				<td>
+					<input  name="state" id="state" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
+				</td>		
+			</tr>
+			
+			<tr>
+				<td>Birthdate
+				</td>
+				<td colspan=2>
+					<input  name="birthdate" id="birthdate" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>	
+			
+			<tr>
+				<td>Gender
+				</td>
+				<td colspan=2>
+					<input  name="gender" id="gender" type_of_field='varchar' constraint='1' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>	
+			
+			<tr>
+				<td>What languages do you speak?
+				</td>
+				<td colspan=2>
+					<textarea name='languages' id='languages'  type_of_field='BLOB'   class='input_fields form_style ' >
+					</textarea>
+				</td>	
+			</tr>				
+			<tr>
+				<td>Emergency Contact
+				</td>
+				<td colspan=2>
+					<input  name="emergency_contact" id="emergency_contact" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>		
+			
+			<tr>
+				<td>Education
+				</td>
+				<td colspan=2>
+					<input  name="diploma" id="diploma" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>			
+			
+			<tr>
+				<td>Certification
+				</td>
+				<td colspan=2>
+					<input  name="certification" id="certification" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>			
+			
+			<tr>
+				<td>Degree
+				</td>
+				<td colspan=2>
+					<input  name="degree" id="degree" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>	
+			
+			
+			<tr>
+				<td>Other
+				</td>
+				<td colspan=2>
+					<input  name="other" id="other" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>				
+			
+			
+			<tr>
+				<td>Do you have current First Aid Certification (State Level)
+				</td>
+				<td >
+					<input  name="firstaid" id="firstaid" type_of_field='INT' constraint='1' class='input_fields form_style' type="" value="">
+				</td>	
+				<td >
+					<input  name="expiration_date_first_aid" id="expiration_date_first_aid" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>					
+			</tr>	
+			
+									
+			<tr>
+				<td>Do you have current CPR?
+				</td>
+				<td >
+					<input  name="cpr" id="cpr" type_of_field='INT' constraint='1' class='input_fields form_style' type="" value="">
+				</td>	
+				<td >
+					<input  name="expiration_date_cpr" id="expiration_date_cpr" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
+				</td>					
+			</tr>	
+			
+			<tr>
+				<td>Have you taken a Food Safety course?
+				</td>
+				<td colspan=2>
+					<input  name="food_safety" id="food_safety" type_of_field='INT' constraint='1' class='input_fields form_style' type="" value="">
+				</td>	
+			</tr>				
+														
+					
 			<tr>
 				<td>Message
 				</td>
 				<td colspan=2>
-					<textarea  class='form_style ' >
+					<textarea name='message' id='message'  type_of_field='BLOB'   class='input_fields form_style ' >
 					</textarea>
 				</td>	
+			</tr>	
+			
+	
+			
+			<tr>
+				<td colspan=2><input id='submit' name='submit' type='button' value='submit'>
+				</td>	
 			</tr>					
-			
-			
 				
 			
 		</table>
@@ -173,6 +285,7 @@ height:40px;
 	</div>		
 	
 </div>
+</form>
 
 
 <?php     

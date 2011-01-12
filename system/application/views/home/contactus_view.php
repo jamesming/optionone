@@ -1,33 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<script type="text/javascript" language="Javascript" src = "<?php echo  base_url();   ?>js/jquery.js"></script>
-<head>
-<?php     	$this->load->view('header/header_css.php');  ?>
-	<script type="text/javascript" language="Javascript">
-		
-			$(document).ready(function() {
-				
-				$('.input_fields').each(
-				
-						function( i ){
-			 
-								$.post("<?php echo base_url(). 'index.php/home/create_table_for_form'; ?>",{
-									table: $('body').attr('id'),
-									field: $(this).attr('id'),
-									type_of_field: $(this).attr('type_of_field'),
-									constraint: $(this).attr('constraint')
-									},function(data) {
-												
-									});
-						}
-				);	
-			 
-			});
-			 
-	</script>
-</head>
-<body id='prospects'>
+<?php     
+			$this->load->view('header/form_header.php');
+?>
+<body id='contactus'    >
 <?php     
 			$this->load->view('header/optionone_header.php');
 ?>
@@ -42,7 +16,7 @@
 **/
 
 -->
-<div class='container'   style='height:300px'   >
+<div class='container'   style='height:300px;'   >
 	<div id="myGallery">
 		<img  class='active'  src='<?php echo base_url()    ?>images/About_Us_Banner.jpg'>	
 	</div>
@@ -50,7 +24,7 @@
 
 
 
-<div   class='container'   style='padding-bottom:10px'  >
+<div   class='container'     style='margin-top:30px'  >
 
 	<div class='column span-2 '  >
 		
@@ -82,13 +56,6 @@
 	</div>
 	
 </div>
-
-
-<!--  
-*
-*  FORM
-*
--->
 
 
 
@@ -134,7 +101,7 @@ height:40px;
 	-webkit-border-bottom-left-radius: 6px;
 }
 </style>
-
+<form name='prospects' id='prospects'>
 <div   class='container'     style='padding-bottom:40px'   >
 
 	<div class='column span-2' >&nbsp;
@@ -164,7 +131,7 @@ height:40px;
 				<td>Your Phone Number
 				</td>
 				<td colspan=2>
-					<input  name="phone" id="phone" type_of_field='varchar' constraint='255' class='input_fields form_style' name="phone" id="phone" type="" value="">
+					<input  name="phone" id="phone" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
 				</td>	
 			</tr>					
 			<tr>
@@ -176,7 +143,10 @@ height:40px;
 				</td>	
 			</tr>					
 			
-			
+			<tr>
+				<td colspan=2><input id='submit' name='submit' type='button' value='submit'>
+				</td>	
+			</tr>					
 				
 			
 		</table>
@@ -187,7 +157,7 @@ height:40px;
 	</div>		
 	
 </div>
-
+</form>
 
 <?php     
 			$this->load->view('footer/optionone_footer.php');
