@@ -549,7 +549,7 @@ MySQL connection parameters:
  
     <td>Database:</td>
  
-    <td><input  name="mysql_database" value="prospace_db"  /></td>
+    <td><input  name="mysql_database" value="optionone_db"  /></td>
  
   </tr>
  
