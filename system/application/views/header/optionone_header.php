@@ -36,8 +36,11 @@ $(document).ready(function() {
 																																															// represents table name     represents field name
 
 		});	
+		
 	
-	
+		$('#corporate_logo').click(function(event) {
+			document.location = '<?php echo base_url()    ?>'
+		});	
 	
 
 });
@@ -284,7 +287,7 @@ $.fn.fancyZoom = function(options){
 	padding:15px 0px;
 	'  >
 	
-	<img   style='
+	<img  id='corporate_logo' class='cursor_pointer' style='
 	border:0px solid red;
 	float:left;
 	'  
