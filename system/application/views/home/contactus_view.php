@@ -147,31 +147,31 @@ height:40px;
 				<td>Your Name
 				</td>
 				<td>
-					<input type_of_field='varchar' constraint='255' class='input_fields form_style smaller' name="firstname" id="firstname" type="" value="">
+					<input  name="firstname" id="firstname" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
 				</td>
 				<td>
-					<input type_of_field='varchar' constraint='255' class='input_fields form_style smaller' name="lastname" id="lastname" type="" value="">
+					<input  name="lastname" id="lastname" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
 				</td>		
 			</tr>
 			<tr>
 				<td>Your Email
 				</td>
 				<td colspan=2>
-					<input type_of_field='varchar' constraint='255' class='input_fields form_style' name="email" id="email" type="" value="">
+					<input  name="email" id="email" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
 				</td>	
 			</tr>		
 			<tr>
 				<td>Your Phone Number
 				</td>
 				<td colspan=2>
-					<input type_of_field='varchar' constraint='255' class='input_fields form_style' name="phone" id="phone" type="" value="">
+					<input  name="phone" id="phone" type_of_field='varchar' constraint='255' class='input_fields form_style' name="phone" id="phone" type="" value="">
 				</td>	
 			</tr>					
 			<tr>
 				<td>Message
 				</td>
 				<td colspan=2>
-					<textarea id='message'  type_of_field='BLOB'   class='input_fields form_style ' >
+					<textarea name='message' id='message'  type_of_field='BLOB'   class='input_fields form_style ' >
 					</textarea>
 				</td>	
 			</tr>					
