@@ -59,8 +59,19 @@
 		<p>
 		<span id='aboutus_span' href="#large_box" class='large_box_link cursor_pointer '  ></span>
 		</p>
-		
-
+		<hr>
+		<p>
+		<span id='person1' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		</p>
+		<p>
+		<span id='person2' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		</p>
+		<p>
+		<span id='person3' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		</p>
+		<p>
+		<span id='person4' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		</p>
 		
 	</div>
 	
