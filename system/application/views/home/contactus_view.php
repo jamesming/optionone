@@ -27,14 +27,11 @@
 **/
 
 -->
-
 <div class='container'   style='height:300px'   >
 	<div id="myGallery">
-		<img  class='active'  src='<?php echo base_url()    ?>images/Contact_Us_Banner.jpg'>	
-		<img   src='images/mainImage2.jpg'>	
+		<img  class='active'  src='<?php echo base_url()    ?>images/About_Us_Banner.jpg'>	
 	</div>
 </div>
-
 
 
 
@@ -50,7 +47,7 @@
 			
 	<div class='column span-14 '  >
 			
-		<span id='ourteam' href="#large_box" class='large_box_link cursor_pointer '  >This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+		<span id='ourteam' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  >This is a simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
 		
 	</div>
 

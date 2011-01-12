@@ -1,8 +1,23 @@
+<style>
+#myGallery img{
+	margin:20px 0px 0px 0px;
+	float:left;
+	width:100%;
+  display:none;
+  #position:absolute;
+  #top:0;
+  #left:0;
+}
+#myGallery img.active{
+    display:block;
+}
+
+</style>
 <script type="text/javascript" language="Javascript">
 
 $(document).ready(function() { 
 	
-		$('.large_box_link').each(
+		$('.fancy_zoom_modal_box_for_text_editor_link').each(
 		
 				function( i ){
 	 
@@ -18,8 +33,9 @@ $(document).ready(function() {
 		).fancyZoom().click(function(event) {
 		
 			$("#iframe_content").attr('src','<?php echo base_url();    ?>index.php/home/wysiwyg/' + $('body').attr('id') + '/' + $(this).attr('id') );
+																																															// represents table name     represents field name
 
-	});	
+		});	
 	
 	
 	
@@ -226,56 +242,15 @@ $.fn.fancyZoom = function(options){
 </script>
 
 
-
-
-
-
-<style>
-#myGallery img{
-	margin:20px 0px 0px 0px;
-	float:left;
-	width:100%;
-  display:none;
-  #position:absolute;
-  #top:0;
-  #left:0;
-}
-#myGallery img.active{
-    display:block;
-}
-#overlay {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width:100%;
-	height:100%;
-	text-align:center;
-	z-index: 1000;
-	background: #eeeeee 50% 50% repeat; opacity: .80;filter:Alpha(Opacity=80); 
-}
-
-.modal { 
-	 z-index: 10000;
-	 position: absolute;
-	 top: 100px;
-	 margin: 0 auto;
-	 background: #fff;
-	 border:1px solid #ccc;
-	 padding:10px;
-	 text-align:center
-}
-</style>
-
-
 <!--  
 /**
 *
-* Fancyzoom box
+* Fancyzoom modal box
 *
 **/
 -->
 
-<div id="large_box"     >
+<div id="fancy_zoom_modal_box_for_text_editor"     >
 		<iframe id="iframe_content"   style="
 			width:700px;
 			height:640px;

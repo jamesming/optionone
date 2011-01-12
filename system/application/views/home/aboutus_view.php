@@ -11,6 +11,15 @@
 
 	    
 			$(document).ready(function() {
+				
+					$('.fancy_zoom_modal_box_for_moreabout_link')
+					.fancyZoom().click(function(event) {
+					
+						$("#iframe_content_for_moreabout").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' + $('body').attr('id') + '/' + $(this).attr('field') );
+																																																		// represents table name     									represents field name
+			
+					});	
+				
 
 			});
 			
@@ -35,7 +44,6 @@
 <div class='container'   style='height:300px'   >
 	<div id="myGallery">
 		<img  class='active'  src='<?php echo base_url()    ?>images/About_Us_Banner.jpg'>	
-		<img   src='images/mainImage2.jpg'>	
 	</div>
 </div>
 
@@ -57,20 +65,51 @@
 		
 		
 		<p>
-		<span id='aboutus_span' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='aboutus_span' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		</p>
 		<hr>
+		
+		<style>
+		.fancy_zoom_modal_box_for_moreabout_link{
+		background:lightyellow;
+		font-weight:bold;
+		font-size:15px;	
+		padding:10px;
+		color:blue;
+		}	
+		</style>
+		
+		
+		<div field='person1' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
+			first person of interest
+		</div>
+		
 		<p>
-		<span id='person1' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='person1' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		</p>
+		
+		
+		<div field='person2' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
+			second person of interest
+		</div>		
+		
 		<p>
-		<span id='person2' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='person2' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		</p>
+		
+		<div field='person3' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
+			third person of interest
+		</div>		
+		
 		<p>
-		<span id='person3' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='person3' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		</p>
+		
+		<div field='person4' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
+			forth person of interest
+		</div>	
 		<p>
-		<span id='person4' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='person4' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		</p>
 		
 	</div>
@@ -89,6 +128,32 @@
 <?php     
 			$this->load->view('footer/optionone_footer.php');
 ?>
+
+
+
+
+<!--  
+/**
+*
+* Fancyzoom modal box
+*
+**/
+-->
+
+<div id="fancy_zoom_modal_box_for_moreabout"     >
+		<iframe id="iframe_content_for_moreabout"   style="
+			width:700px;
+			height:440px;
+			margin: 0; 
+			padding: 0; 
+			border: 0px solid black;
+			" 
+			frameborder="0" src=""  >
+			
+		    <p>Your browser does not support iframes.</p>
+		    
+		</iframe>
+</div>
 </body >
 
 <?php

@@ -66,6 +66,11 @@
 						
 				})	
 				
+				
+				//*
+				//* Using AJAX to pull the field content from the server
+				//*
+				
 				$.post("<?php echo base_url(). 'index.php/home/get'; ?>",{
 					table: '<?php echo $table;    ?>',
 					field: '<?php echo $field;    ?>'

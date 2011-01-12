@@ -85,7 +85,26 @@ function wysiwyg(){
 	
 }
 
+/**
+ * iframe of moreabout
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/moreabout
+ * @access public
+ **/ 
 
+function moreabout(){
+	
+	$table = $this->uri->segment(3);
+	$field = $this->uri->segment(4);
+
+	$data = array('table' => $table, 'field' =>  $field);
+	
+	$this->load->view('home/moreabout_view', $data);
+	
+}
 
 /**
  * get

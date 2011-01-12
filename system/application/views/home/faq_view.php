@@ -34,10 +34,8 @@
 <div class='container'   style='height:300px'   >
 	<div id="myGallery">
 		<img  class='active'  src='<?php echo base_url()    ?>images/About_Us_Banner.jpg'>	
-		<img   src='images/mainImage2.jpg'>	
 	</div>
 </div>
-
 
 
 <!--  
@@ -55,7 +53,7 @@
 	<div class='column span-16' >
 		
 		
-		<span id='faq_span' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='faq_span' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	

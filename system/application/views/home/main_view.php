@@ -1,6 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	
+
+
 	<script type="text/javascript" language="Javascript" src = "<?php echo  base_url();   ?>js/jquery.js"></script>
 	
 <head>
@@ -69,7 +72,7 @@
 	'  >
 			
 	<div class='column span-8'     >
-		<div id='straightforward_head'  href="#large_box" class=' large_box_link cursor_pointer'>
+		<div id='straightforward_head'  href="#fancy_zoom_modal_box_for_text_editor" class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer'>
 			
 		</div>
 		<img   style='
@@ -80,7 +83,7 @@
 	</div>
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
-		<div id='qualified_head'  href="#large_box"  class=' large_box_link cursor_pointer' >
+		<div id='qualified_head'  href="#fancy_zoom_modal_box_for_text_editor"  class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer' >
 		</div>
 		<img   style='
 			float:left;
@@ -90,7 +93,7 @@
 	</div>	
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
-		<div id='attentive_head'  href="#large_box" class=' large_box_link cursor_pointer'>
+		<div id='attentive_head'  href="#fancy_zoom_modal_box_for_text_editor" class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer'>
 		</div>
 		<img   style='
 		float:left;
@@ -120,13 +123,13 @@
 	<div class='column span-8 subhead_B_div'  >
 
 
-		<span id='ourservice' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='ourservice' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	
 	<div class='column span-8 subhead_B_div '   style='border:0px solid gray'  >
 
-		<span id='whyoption' href="#large_box" class='large_box_link cursor_pointer '  ></span>
+		<span id='whyoption' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 	</div>	
 	
 	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >
