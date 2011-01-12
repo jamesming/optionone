@@ -7,12 +7,27 @@
 	<script type="text/javascript" language="Javascript">
 		
 			$(document).ready(function() {
+				
+				$('.input_fields').each(
+				
+						function( i ){
+			 
+								$.post("<?php echo base_url(). 'index.php/home/create_table_for_form'; ?>",{
+									table: $('body').attr('id'),
+									field: $(this).attr('id'),
+									type_of_field: $(this).attr('type_of_field'),
+									constraint: $(this).attr('constraint')
+									},function(data) {
+												
+									});
+						}
+				);	
 			 
 			});
 			 
 	</script>
 </head>
-<body id='contactus'>
+<body id='prospects'>
 <?php     
 			$this->load->view('header/optionone_header.php');
 ?>
@@ -132,31 +147,31 @@ height:40px;
 				<td>Your Name
 				</td>
 				<td>
-					<input class='form_style smaller' name="" id="" type="" value="">
+					<input type_of_field='varchar' constraint='255' class='input_fields form_style smaller' name="firstname" id="firstname" type="" value="">
 				</td>
 				<td>
-					<input class='form_style smaller' name="" id="" type="" value="">
+					<input type_of_field='varchar' constraint='255' class='input_fields form_style smaller' name="lastname" id="lastname" type="" value="">
 				</td>		
 			</tr>
 			<tr>
 				<td>Your Email
 				</td>
 				<td colspan=2>
-					<input class='form_style' name="" id="" type="" value="">
+					<input type_of_field='varchar' constraint='255' class='input_fields form_style' name="email" id="email" type="" value="">
 				</td>	
 			</tr>		
 			<tr>
 				<td>Your Phone Number
 				</td>
 				<td colspan=2>
-					<input class='form_style' name="" id="" type="" value="">
+					<input type_of_field='varchar' constraint='255' class='input_fields form_style' name="phone" id="phone" type="" value="">
 				</td>	
 			</tr>					
 			<tr>
 				<td>Message
 				</td>
 				<td colspan=2>
-					<textarea  class='form_style ' >
+					<textarea id='message'  type_of_field='BLOB'   class='input_fields form_style ' >
 					</textarea>
 				</td>	
 			</tr>					

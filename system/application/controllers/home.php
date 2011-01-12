@@ -239,6 +239,105 @@ function update(){
 }
 
 
+/**
+ * create_table_for_form
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @uses My_database_model::create_table_with_fields()
+ * @uses My_database_model::add_column_to_table_if_exist()
+ * @path /index.php/home/create_table_for_form
+ * @access public
+ **/ 
+
+function create_table_for_form(){
+	
+	$table = $this->input->post('table');
+	$field = $this->input->post('field');
+	$type_of_field = $this->input->post('type_of_field');
+	$constraint = $this->input->post('constraint');
+
+
+	/**
+	 * Set up the table and the fields
+	 *
+	 **/ 
+	
+	$fields_array = array(
+	                        'id' => array(
+	                                                 'type' => 'INT',
+	                                                 'unsigned' => TRUE,
+	                                                 'auto_increment' => TRUE
+	                                      ),
+	                        'created' => array(
+	                                                 'type' => 'DATETIME'
+	                                        ),
+	                        'updated' => array(
+	                                                 'type' => 'DATETIME'
+	                                        )  
+	                );
+	                
+	$primary_key = 'id';
+	
+	$this->my_database_model->create_table_with_fields($table, $primary_key, $fields_array);
+	
+	
+	if( $type_of_field == 'BLOB'){
+			$fields_array = array(
+			                        $field => array(
+	                                                 'type' => 'BLOB'
+	                                        )                                     
+			                                        
+			                );	
+	
+	}else{
+			$fields_array = array(
+			                        $field => array(
+			                                                 'type' => $type_of_field,
+		                                                 	 'constraint' => $constraint
+			                                        )                                     
+			                                        
+			                );		
+	};
+
+	
+	$this->my_database_model->add_column_to_table_if_exist($table, $fields_array);
+	
+	
+	
+	$data = array('field' => $field, 'text' => $text,  'type' => $type);
+	
+	// $this->load->view('home/create_table_for_form_view', $data);	
+	
+}
+
+
+/**
+ * insert_into_table_for_form
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @uses My_database_model::insert_table()
+ * @path /index.php/home/insert_into_table_for_form
+ * @access public
+ **/ 
+
+function insert_into_table_for_form(){
+	
+	echo '<pre>';print_r(  $table = $this->input->post  );echo '</pre>';  exit;
+	
+	$table = $this->input->post('table');
+	$field = $this->input->post('field');
+	$type_of_field = $this->input->post('type_of_field');
+	$constraint = $this->input->post('constraint');
+
+
+	
+}
+
+
 
 /**
  * about us

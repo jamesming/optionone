@@ -356,11 +356,11 @@ $.fn.fancyZoom = function(options){
 						
 			<ul id="menu1">
 			<li><a href="<?php echo base_url()    ?>">Home</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/aboutus">About</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/services">Services</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/faq">FAQs</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/employment">Employment</a></li>
-			<li><a href="<?php echo base_url()    ?>/index.php/home/contactus">Contact</a></li>
+			<li><a href="<?php echo base_url()    ?>index.php/home/aboutus">About</a></li>
+			<li><a href="<?php echo base_url()    ?>index.php/home/services">Services</a></li>
+			<li><a href="<?php echo base_url()    ?>index.php/home/faq">FAQs</a></li>
+			<li><a href="<?php echo base_url()    ?>index.php/home/employment">Employment</a></li>
+			<li><a href="<?php echo base_url()    ?>index.php/home/contactus">Contact</a></li>
 			</ul>
 			
 		</div>
