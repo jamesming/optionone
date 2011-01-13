@@ -336,7 +336,7 @@ $.fn.fancyZoom = function(options){
 			
 			#menu1 li {
 			  float:left;
-			  width:98px;
+			  width:148px;
 			  #border:1px solid #fff; 
 			  }
 			
@@ -349,6 +349,10 @@ $.fn.fancyZoom = function(options){
 			  padding:4px 0; 
 			  text-decoration:none; 
 			  float:left; 
+			  font-size:14px;
+			  font-weight:bold;
+			  font-family: 'trebuchet MS', sans-serif;
+			  text-transform: uppercase;
 			  }
 			
 			#menu1 a:hover {
