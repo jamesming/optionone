@@ -47,7 +47,9 @@
 
 <form id='applicants'></form>
 <div  class='container ' >
-		<iframe id="iframe_content_for_applicants_form"     style='
+	
+	
+		<iframe id="iframe_content_for_applicants_form2"     class="autoHeight"    style='
 			display:none;
 			border:0px solid gray;
 			width:100%;
@@ -62,8 +64,8 @@
 		</iframe>
 		
 		
-<iframe allowtransparency="true" src="http://www.jotform.com/form/10110604832" frameborder="0" style="width:100%; height:4152px; border:none;" scrolling="no">
-</iframe>
+		<iframe id="iframe_content_for_applicants_form"     allowtransparency="true" src="http://www.jotform.com/form/10110604832" frameborder="0" style="width:100%; height:4452px; border:none;" >
+		</iframe>
 		
 		
 </div>

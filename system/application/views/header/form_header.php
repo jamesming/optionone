@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<script type="text/javascript" language="Javascript" src = "<?php echo  base_url();   ?>js/jquery.js"></script>
-
+	<script type="text/javascript" src="<?php echo  base_url();   ?>js/jquery.autoheight.js"></script> 
 <?php     	$this->load->view('header/header_css.php');  ?>
 	<script type="text/javascript" language="Javascript">
 		
@@ -59,6 +59,10 @@ $(document).ready(function(){
 //    });
 
 
+				// trying to reset the height of the iframe to the height of website inside
+				// setInterval('doIframe()', 1000);
+
+				
 
 				$('.input_fields').each(
 				
@@ -92,6 +96,10 @@ $(document).ready(function(){
 
 });
 
+	function donow(){
+		alert('');
+	
+	}
 	 
 	</script>
 </head>
