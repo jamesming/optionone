@@ -15,7 +15,9 @@
 			margin-top:20px;
 			margin-bottom:7px;
 			text-align:center;
-			'  >Americans 65 And Older (<a id='counter_see_calculation_link'  href="#small_box" >See the calculation!</a>)
+			font-weight:bold;
+			font-size:15px;
+			'  >Americans 65 and Older
 		</div>
 		<div    >
 				<img    style='float:left'    src='<?php  echo base_url();   ?>images/counterL.jpg'>
@@ -36,7 +38,14 @@
 				</div>
 				<img    style='float:left'    src='<?php  echo base_url();   ?>images/counterR.jpg'>
 		</div>
-		
+		<div   style='
+			margin-top:70px;
+			margin-bottom:7px;
+			text-align:center;
+			font-size:13px;
+			'  ><a  id='counter_see_calculation_link'  href="#small_box" >See how we figured it...</a>
+
+		</div>
 		
 		
 <div id="small_box">
@@ -44,25 +53,16 @@
 			width:700px;
 			height:260px;		
 		'  >
-									<font class="Apple-style-span" size="3"><b><font class="Apple-style-span" color="#8B0000">How we figured it…&nbsp;</font></b><br /></font>
-							<div><font class="Apple-style-span" size="3">&nbsp;</font></div>
-							<div>
-							<ul>
-							<li><span class="Apple-style-span" style="font-size: medium; ">Americans 65 or older (According to the most recent U.S. Census)&nbsp;</span></li>
-							<li><span class="Apple-style-span" style="font-size: medium; ">39,603,845
-							
-							American 65 or older by 2030 (According to U.S. Government forecast)&nbsp;</span></li>
-							<li><span class="Apple-style-span" style="font-size: medium; ">72,000,000
-							
-							Increase in the number of Americans 65 or older from 2010 to 2030&nbsp;</span></li>
-							<li><span class="Apple-style-span" style="font-size: medium; ">32,396,155
-							
-							Average annual growth in the number of Americans 65+ over the next 20 years&nbsp;</span></li>
-							<li><span class="Apple-style-span" style="font-size: medium; ">1,619,908
-							
-							Average daily growth of 65+ b/t '10 and '30<span class="Apple-tab-span" style="white-space:pre">	</span><b>4,438</b></span></li>
-							<li><span class="Apple-style-span" style="font-size: medium; ">Average hourly growth of 65+ b/t '10 and '30</span><span class="Apple-style-span" style="font-size: medium; "><span class="Apple-tab-span" style="white-space:pre">	</span></span><span class="Apple-style-span" style="font-size: medium; "><b>185</b></span><span class="Apple-style-span" style="font-size: medium; ">&nbsp;</span></li>
-							<li><span class="Apple-style-span" style="font-size: medium; ">Average minute-to-minute growth of 65+ b/t '10 and '30<span class="Apple-tab-span" style="white-space:pre">	</span><b>3</b></span></li></ul></div>
+		<p><font class="Apple-style-span" color="#8B0000" size="5" face="arial">Calculations…&nbsp;</font></p>
+<p><font class="Apple-style-span" face="georgia" size="2">Figures and estimates are from the U.S. Government Census or U.S. Government Forecasts&nbsp;<br /></font></p>
+<ol type="1">
+<li><font face="georgia" size="2">Start with the latest available&nbsp;<b>number of Americans 65 and older</b>&nbsp;<b>39,603,845</b></font></li>
+<li><font face="georgia" size="2">Subtract this number from the&nbsp;<b>forecasted number of Americans 65 or older by 2030</b>&nbsp;<b>72,000,000</b></font></li>
+<li><font face="georgia" size="2">The result is the&nbsp;<b>growth in number of Americans 65+ from 2010 to 2030</b>&nbsp;<b>32,396,155</b></font></li>
+<li><font face="georgia" size="2">Divide growth number by number years being considered (20) to determine the&nbsp;<b>average annual growth</b>&nbsp;<b>1,619,908</b></font></li>
+<li><font face="georgia" size="2">Divide the average annual growth by 365 to determine&nbsp;<b>average daily growth</b>&nbsp;<b>4,438</b></font></li>
+<li><font face="georgia" size="2">Divide average daily growth by 24 to determine the&nbsp;<b>average hourly growth</b>&nbsp;<b>185</b></font></li>
+<li><font face="georgia" size="2">Divide the average hourly growth by 60 to determine the&nbsp;<b>average growth per minute</b>&nbsp;<b>3</b></font></li></ol>
 	</div>
 </div>
 
