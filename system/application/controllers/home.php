@@ -431,6 +431,22 @@ function contactus(){
 	
 }
 
+
+/**
+ * applicants_form_in_iframe
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/applicants_form_in_iframe
+ * @access public
+ **/ 
+
+function applicants_form_in_iframe(){
+	
+	$this->load->view('iframe/applicants_form_in_iframe_view');	
+	
+}
   
 	
 }
