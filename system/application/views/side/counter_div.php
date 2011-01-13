@@ -16,7 +16,8 @@
 			margin-bottom:7px;
 			text-align:center;
 			font-weight:bold;
-			font-size:15px;
+			font-size:17px;
+			letter-spacing: 3pt;
 			'  >Americans 65 and Older
 		</div>
 		<div    >

@@ -30,7 +30,7 @@
 
 <div   class='container'     style='margin-top:30px'  >
 
-	<div class='column span-14 '   style='text-align:center'   >
+	<div class='column span-12 '   style='text-align:center'   >
 		
 		<img src='<?php echo base_url()    ?>images/contactUsFormBig.jpg'>	
 		
@@ -40,77 +40,9 @@
 			
 
 	
-	<div class='column span-10 last'   >
-		
-<style>
-#form_table td{
-height:40px;
-}
-.form_style{
-	border:1px solid gray;
-#	font-size:27px;
-	width:94px;
-	height:25px;
-	padding-left:10px;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
-	-webkit-border-top-right-radius: 6px;
-	-webkit-border-top-left-radius: 6px;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
-	-moz-border-radius-bottomleft: 6px;
-	-moz-border-radius-bottomright: 6px;
-	-webkit-border-bottom-right-radius: 6px;
-	-webkit-border-bottom-left-radius: 6px;
-}
-</style>
-<form name='prospects' id='prospects'>
-		<table id='form_table'>
-			<tr>
-				<td>Your Name
-				</td>
-				<td>
-					<input  name="firstname" id="firstname" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
-				</td>
-				<td>
-					<input  name="lastname" id="lastname" type_of_field='varchar' constraint='255' class='input_fields form_style smaller' type="" value="">
-				</td>		
-			</tr>
-			<tr>
-				<td>Your Email
-				</td>
-				<td colspan=2>
-					<input  name="email" id="email" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
-				</td>	
-			</tr>		
-			<tr>
-				<td>Your Phone Number
-				</td>
-				<td colspan=2>
-					<input  name="phone" id="phone" type_of_field='varchar' constraint='255' class='input_fields form_style' type="" value="">
-				</td>	
-			</tr>					
-			<tr>
-				<td>Message
-				</td>
-				<td colspan=2>
-					<textarea name='message' id='message'  type_of_field='BLOB'   class='input_fields form_style ' >
-					</textarea>
-				</td>	
-			</tr>					
-			
-			<tr>
-				<td colspan=2><input id='submit' name='submit' type='button' value='submit'>
-				</td>	
-			</tr>					
-				
-			
-		</table>
-</form>
-
-			
+	<div class='column span-12 last'   >
+	<iframe allowtransparency="true" src="http://www.jotform.com/form/10114419783" frameborder="0" style="width:100%; height:643px; border:none;" scrolling="no">
+</iframe>
 	</div>
 	
 </div>
