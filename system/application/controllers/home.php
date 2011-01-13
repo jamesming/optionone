@@ -23,6 +23,8 @@
  * 
  */
 class Home extends Controller {
+	
+	public $edit_key_word = 'edit';
 
 	function Home(){
 		parent::Controller();	
@@ -42,8 +44,19 @@ class Home extends Controller {
  **/ 
 
 function index(){
-	$data['controller'] = 'home';
-	$this->load->view('home/main_view');
+	
+	$edit = $this->uri->segment(3);
+	
+	if( $edit == $this->edit_key_word){
+
+		$this->load->view('edit/main_view');
+
+	}else{
+	
+		$this->load->view('home/main_view');
+		
+	};
+
 }
 	
 
@@ -81,7 +94,7 @@ function wysiwyg(){
 
 	$data = array('table' => $table, 'field' =>  $field);
 	
-	$this->load->view('home/wysiwyg_view', $data);
+	$this->load->view('iframe/wysiwyg_view', $data);
 	
 }
 
@@ -234,7 +247,7 @@ function update(){
 	
 	$data = array('field' => $field, 'text' => $text);
 	
-	$this->load->view('home/update_view', $data);	
+	$this->load->view('ajax/update_view', $data);	
 	
 }
 
@@ -360,7 +373,18 @@ function insert_into_table_for_form(){
 
 function aboutus(){
 	
-	$this->load->view('home/aboutus_view');	
+	$edit = $this->uri->segment(3);
+	
+	if( $edit == $this->edit_key_word){
+
+		$this->load->view('edit/aboutus_view');
+
+	}else{
+	
+		$this->load->view('home/aboutus_view');
+		
+	};
+
 	
 }
 
@@ -376,8 +400,18 @@ function aboutus(){
 
 function services(){
 	
-	$this->load->view('home/services_view');	
+		
+	$edit = $this->uri->segment(3);
 	
+	if( $edit == $this->edit_key_word){
+
+		$this->load->view('edit/services_view');
+
+	}else{
+	
+		$this->load->view('home/services_view');
+		
+	};
 }
 
 
@@ -393,8 +427,18 @@ function services(){
 
 function employment(){
 	
-	$this->load->view('home/employment_view');	
+	$edit = $this->uri->segment(3);
 	
+		
+	if( $edit == $this->edit_key_word){
+
+		$this->load->view('edit/employment_view');
+
+	}else{
+	
+		$this->load->view('home/employment_view');
+		
+	};
 }
 
 
@@ -410,7 +454,17 @@ function employment(){
 
 function faq(){
 	
-	$this->load->view('home/faq_view');	
+	$edit = $this->uri->segment(3);
+	
+	if( $edit == $this->edit_key_word){
+
+		$this->load->view('edit/faq_view');
+
+	}else{
+	
+		$this->load->view('home/faq_view');
+		
+	};
 	
 }
 
@@ -427,7 +481,19 @@ function faq(){
 
 function contactus(){
 	
-	$this->load->view('home/contactus_view');	
+	$edit = $this->uri->segment(3);
+	
+	if( $edit == $this->edit_key_word){
+
+		$this->load->view('edit/contactus_view');	
+
+	}else{
+	
+		$this->load->view('home/contactus_view');	
+		
+	};
+	
+	
 	
 }
 

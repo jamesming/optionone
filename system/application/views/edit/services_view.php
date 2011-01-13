@@ -9,6 +9,7 @@
 	<script type="text/javascript" language="Javascript">
 		
 
+	    
 			$(document).ready(function() { 
 
 			});
@@ -16,9 +17,9 @@
 			
 	</script>
 </head>
-<body id='faq'>
+<body id='services'>
 <?php     
-			$this->load->view('header/optionone_header.php');
+			$this->load->view('edit/optionone_header.php');
 ?>
 
 
@@ -50,10 +51,9 @@
 <div   class='container'   style='padding-bottom:60px'  >
 
 			
-	<div class='column span-16' >
+	<div class='column span-16 '  >
 		
-		
-		<span id='faq_span'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='services_span' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	

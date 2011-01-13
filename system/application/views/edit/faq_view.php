@@ -18,7 +18,7 @@
 </head>
 <body id='faq'>
 <?php     
-			$this->load->view('header/optionone_header.php');
+			$this->load->view('edit/optionone_header.php');
 ?>
 
 
@@ -53,7 +53,7 @@
 	<div class='column span-16' >
 		
 		
-		<span id='faq_span'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='faq_span' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	

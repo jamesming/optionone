@@ -53,7 +53,7 @@
 			
 	<div class='column span-16 '  >
 		
-		<span id='services_span' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
+		<span id='services_span'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
 		
 	</div>
 	

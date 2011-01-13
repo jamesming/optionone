@@ -33,7 +33,7 @@
 </head>
 <body id='main'>
 <?php     
-			$this->load->view('header/optionone_header.php');
+			$this->load->view('edit/optionone_header.php');
 ?>
 
 
@@ -72,7 +72,7 @@
 	'  >
 			
 	<div class='column span-8'     >
-		<div id='straightforward_head'   class='  fancy_zoom_modal_box_for_text_editor_link '>
+		<div id='straightforward_head'  href="#fancy_zoom_modal_box_for_text_editor" class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer'>
 			
 		</div>
 		<img   style='
@@ -83,7 +83,7 @@
 	</div>
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
-		<div id='qualified_head'    class='  fancy_zoom_modal_box_for_text_editor_link ' >
+		<div id='qualified_head'  href="#fancy_zoom_modal_box_for_text_editor"  class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer' >
 		</div>
 		<img   style='
 			float:left;
@@ -93,7 +93,7 @@
 	</div>	
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
-		<div id='attentive_head'   class='  fancy_zoom_modal_box_for_text_editor_link '>
+		<div id='attentive_head'  href="#fancy_zoom_modal_box_for_text_editor" class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer'>
 		</div>
 		<img   style='
 		float:left;
@@ -123,13 +123,13 @@
 	<div class='column span-8 subhead_B_div'  >
 
 
-		<span id='ourservice'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='ourservice' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	
 	<div class='column span-8 subhead_B_div '   style='border:0px solid gray'  >
 
-		<span id='whyoption'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='whyoption' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 	</div>	
 	
 	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >

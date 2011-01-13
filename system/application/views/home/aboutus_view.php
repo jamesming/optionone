@@ -12,13 +12,7 @@
 	    
 			$(document).ready(function() {
 				
-					$('.fancy_zoom_modal_box_for_moreabout_link')
-					.fancyZoom().click(function(event) {
-					
-						$("#iframe_content_for_moreabout").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' + $('body').attr('id') + '/' + $(this).attr('field') );
-																																																		// represents table name     									represents field name
-			
-					});	
+
 				
 
 			});
@@ -65,52 +59,10 @@
 		
 		
 		<p>
-		<span id='aboutus_span' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
+		<span id='aboutus_span'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
 		</p>
-		<hr>
-		
-		<style>
-		.fancy_zoom_modal_box_for_moreabout_link{
-		background:lightyellow;
-		font-weight:bold;
-		font-size:15px;	
-		padding:10px;
-		color:blue;
-		}	
-		</style>
-		
-		
-		<div field='person1' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
-			first person of interest
-		</div>
-		
-		<p>
-		<span id='person1' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
-		</p>
-		
-		
-		<div field='person2' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
-			second person of interest
-		</div>		
-		
-		<p>
-		<span id='person2' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
-		</p>
-		
-		<div field='person3' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
-			third person of interest
-		</div>		
-		
-		<p>
-		<span id='person3' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
-		</p>
-		
-		<div field='person4' href="#fancy_zoom_modal_box_for_moreabout" class='fancy_zoom_modal_box_for_moreabout_link cursor_pointer '>
-			forth person of interest
-		</div>	
-		<p>
-		<span id='person4' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
-		</p>
+
+
 		
 	</div>
 	
