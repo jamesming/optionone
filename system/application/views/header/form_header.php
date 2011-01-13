@@ -57,6 +57,39 @@ $(document).ready(function(){
 //        
 //        
 //    });
+
+
+
+				$('.input_fields').each(
+				
+						function( i ){
+			 
+								$.post("<?php echo base_url(). 'index.php/home/create_table_for_form'; ?>",{
+									table: $('form').attr('id'),
+									field: $(this).attr('id'),
+									type_of_field: $(this).attr('type_of_field'),
+									constraint: $(this).attr('constraint')
+									},function(data) {
+												
+									});
+									
+									$(this).val($(this).attr('id'))
+						}
+				);
+
+				$('#submit').click(function(event) {
+					
+								$.post("<?php echo base_url(). 'index.php/home/insert_into_table_for_form'; ?>",{
+									fields: $('form').serialize(),
+									table: $('form').attr('id')
+									},function(data) {
+												alert('submitted');
+									});
+
+				});	
+				
+
+
 });
 
 	 
