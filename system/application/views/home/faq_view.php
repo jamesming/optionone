@@ -53,7 +53,7 @@
 	<div class='column span-16' >
 		
 		
-		<span id='faq_span'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='faq_main_div'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
 		
 	</div>
 	

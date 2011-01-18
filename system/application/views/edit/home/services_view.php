@@ -19,7 +19,7 @@
 </head>
 <body id='services'>
 <?php     
-			$this->load->view('header/optionone_header.php');
+			$this->load->view('edit/header/optionone_header.php');
 ?>
 
 
@@ -53,14 +53,14 @@
 			
 	<div class='column span-16 '  >
 		
-		<span id='services_main_div'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='services_main_div' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	
 	
 	
 <?php     
-			$this->load->view('side/right_side.php');
+			$this->load->view('edit/side/right_side.php');
 ?>
 
 
@@ -69,7 +69,7 @@
 </div>
 
 <?php     
-			$this->load->view('footer/optionone_footer.php');
+			$this->load->view('edit/footer/optionone_footer.php');
 ?>
 </body >
 

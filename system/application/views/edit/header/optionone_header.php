@@ -16,7 +16,9 @@
 <script type="text/javascript" language="Javascript">
 
 $(document).ready(function() { 
-	
+		$('body').css({background:'yellow'});
+		
+		
 		$('.fancy_zoom_modal_box_for_text_editor_link').each(
 		
 				function( i ){
@@ -28,25 +30,14 @@ $(document).ready(function() {
 							field: $(this).attr('id')
 							},function(data) {
 										span_to_update.html(data);
-										
-										$('.fancy_zoom_modal_box_for_moreabout_link')
-										.fancyZoom().click(function(event) {
-										
-											$("#iframe_content_for_moreabout").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' +  'content' + '/' + $(this).attr('field') );
-																																																							// represents table name     									represents field name
-								
-										});			
-										
 							});
-							
-							
-							
-
-							
-							
-							
 				}
-		);	
+		).fancyZoom().click(function(event) {
+		
+			$("#iframe_content").attr('src','<?php echo base_url();    ?>index.php/home/wysiwyg/' + 'content' + '/' + $(this).attr('id') );
+																																															// represents table name     represents field name
+
+		});	
 		
 		
 		$('.fancy_zoom_modal_box_for_common_area_link').each(
@@ -62,7 +53,12 @@ $(document).ready(function() {
 										span_to_update.html(data);
 							});
 				}
-		);	
+		).fancyZoom().click(function(event) {
+		
+			$("#iframe_content_for_common_area_link").attr('src','<?php echo base_url();    ?>index.php/home/wysiwyg/' + 'common' + '/' + $(this).attr('id') );
+																																															// represents table name     represents field name
+
+		});	
 		
 		
 	
@@ -273,7 +269,28 @@ $.fn.fancyZoom = function(options){
 </script>
 
 
+<!--  
+/**
+*
+* Fancyzoom modal box
+*
+**/
+-->
 
+<div id="fancy_zoom_modal_box_for_text_editor"     >
+		<iframe id="iframe_content"   style="
+			width:700px;
+			height:640px;
+			margin: 0; 
+			padding: 0; 
+			border: 0px solid black;
+			" 
+			frameborder="0" src=""  >
+			
+		    <p>Your browser does not support iframes.</p>
+		    
+		</iframe>
+</div>
 
 
 

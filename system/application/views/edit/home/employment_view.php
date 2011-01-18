@@ -9,7 +9,7 @@
 ?>
 <body id='employment'>
 <?php     
-			$this->load->view('header/optionone_header.php');
+			$this->load->view('edit/header/optionone_header.php');
 ?>
 
 
@@ -35,7 +35,7 @@
 
 
 			
-		<span id='employment_main_div'  class=' fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='employment_main_div' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  >XX</span>
 		
 
 	
@@ -75,7 +75,7 @@
 		
 </div>
 <?php     
-			$this->load->view('footer/optionone_footer.php');
+			$this->load->view('edit/footer/optionone_footer.php');
 ?>
 
 </body >

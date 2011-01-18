@@ -49,7 +49,7 @@ function index(){
 	
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/main_view');
+		$this->load->view('edit/home/main_view');
 
 	}else{
 	
@@ -184,13 +184,20 @@ function update(){
 	 * Set up the table and the fields
 	 *
 	 **/ 
-	
+
+	                
 	$fields_array = array(
 	                        'id' => array(
 	                                                 'type' => 'INT',
 	                                                 'unsigned' => TRUE,
 	                                                 'auto_increment' => TRUE
-	                                      )
+	                                      ),
+	                        'created' => array(
+	                                                 'type' => 'DATETIME'
+	                                        ),
+	                        'updated' => array(
+	                                                 'type' => 'DATETIME'
+	                                        )  
 	                );
 	                
 	$primary_key = 'id';
@@ -200,14 +207,7 @@ function update(){
 	$fields_array = array(
 	                        $field => array(
 	                                                 'type' => 'BLOB'
-	                                        ),
-	                        'created' => array(
-	                                                 'type' => 'DATETIME'
-	                                        ),
-	                        'updated' => array(
-	                                                 'type' => 'DATETIME'
-	                                        )                                       
-	                                        
+	                                        )                                      
 	                );
 	
 	$this->my_database_model->add_column_to_table_if_exist($table, $fields_array);
@@ -377,7 +377,7 @@ function aboutus(){
 	
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/aboutus_view');
+		$this->load->view('edit/home/aboutus_view');
 
 	}else{
 	
@@ -405,7 +405,7 @@ function services(){
 	
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/services_view');
+		$this->load->view('edit/home/services_view');
 
 	}else{
 	
@@ -432,7 +432,7 @@ function employment(){
 		
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/employment_view');
+		$this->load->view('edit/home/employment_view');
 
 	}else{
 	
@@ -458,7 +458,7 @@ function faq(){
 	
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/faq_view');
+		$this->load->view('edit/home/faq_view');
 
 	}else{
 	
@@ -485,7 +485,7 @@ function contactus(){
 	
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/contactus_view');	
+		$this->load->view('edit/home/contactus_view');	
 
 	}else{
 	

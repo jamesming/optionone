@@ -9,7 +9,7 @@
 --> 
 
 
-<div   class='container rounded_top_right rounded_top_left' style='
+<div   id='footer' class='fancy_zoom_modal_box_for_text_editor_link container rounded_top_right rounded_top_left' style='
 
 padding:20px 20px;
 #height:auto;
@@ -18,5 +18,5 @@ color:gray;
 background:lightblue;
 
 	
-	'  >&#169; 2011 OptionONE Healthcare Management LLC.
+	'  >
 </div>

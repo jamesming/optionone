@@ -33,7 +33,7 @@
 </head>
 <body id='main'>
 <?php     
-			$this->load->view('header/optionone_header.php');
+			$this->load->view('edit/header/optionone_header.php');
 ?>
 
 
@@ -72,7 +72,7 @@
 	'  >
 			
 	<div class='column span-8'     >
-		<div id='home_straightforward_head'   class='  fancy_zoom_modal_box_for_text_editor_link '>
+		<div id='home_straightforward_head'  href="#fancy_zoom_modal_box_for_text_editor" class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer'>
 			
 		</div>
 		<img   style='
@@ -83,7 +83,7 @@
 	</div>
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
-		<div id='home_qualified_head'    class='  fancy_zoom_modal_box_for_text_editor_link ' >
+		<div id='home_qualified_head'  href="#fancy_zoom_modal_box_for_text_editor"  class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer' >
 		</div>
 		<img   style='
 			float:left;
@@ -93,7 +93,7 @@
 	</div>	
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
-		<div id='home_attentive_head'   class='  fancy_zoom_modal_box_for_text_editor_link '>
+		<div id='home_attentive_head'  href="#fancy_zoom_modal_box_for_text_editor" class=' fancy_zoom_modal_box_for_text_editor_link cursor_pointer'>
 		</div>
 		<img   style='
 		float:left;
@@ -123,13 +123,13 @@
 	<div class='column span-8 subhead_B_div'  >
 
 
-		<span id='home_ourservice'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='home_ourservice' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 		
 	</div>
 	
 	<div class='column span-8 subhead_B_div '   style='border:0px solid gray'  >
 
-		<span id='home_whyoption'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='home_whyoption' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></span>
 	</div>	
 	
 	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >
@@ -148,7 +148,7 @@
 		
 		
 		<?php     
-					$this->load->view('side/counter_div.php');
+					$this->load->view('edit/side/counter_div.php');
 		?>
 		
 		<!--
@@ -175,7 +175,7 @@
 --> 
 
 <?php     
-			$this->load->view('footer/optionone_footer.php');
+			$this->load->view('edit/footer/optionone_footer.php');
 ?>
 
 </body>

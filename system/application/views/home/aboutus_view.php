@@ -11,9 +11,16 @@
 
 	    
 			$(document).ready(function() {
-				
+				$('.fancy_zoom_modal_box_for_moreabout_link')
+											.fancyZoom().click(function(event) {
+											
+												$("#iframe_content_for_moreabout").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' + $('body').attr('id') + '/' + $(this).attr('field') );
+																																																								// represents table name     									represents field name
+									
+											});			
+											
+								});	
 
-				
 
 			});
 			
@@ -59,7 +66,7 @@
 		
 		
 		<p>
-		<span id='aboutus_span'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='aboutus_main_div'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
 		</p>
 
 
