@@ -45,18 +45,15 @@
 			margin-bottom:7px;
 			text-align:center;
 			font-size:13px;
-			'  ><a  id='counter_see_calculation_link'  href="#small_box" >See how we figured it...</a>
+			'  >
+			<a    style='display:none'  id='counter_see_calculation_link'  href="#small_box" >See how we figured it...</a>
 
 		</div>
 		
 		
 		
 		
-		<div id='howCalculationMade' href="#fancy_zoom_modal_box_for_common_areas"   class='fancy_zoom_modal_box_for_common_area_link container rounded_top_right  cursor_pointer rounded_top_left' >
-			
-			
-			
-		</div>
+<a  id='counter_see_calculation_link'   href="#fancy_zoom_modal_box_for_text_editor"   class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  ></a>
 		
 		
 <div id="small_box">

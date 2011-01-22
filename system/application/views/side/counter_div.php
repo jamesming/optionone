@@ -45,39 +45,12 @@
 			margin-bottom:7px;
 			text-align:center;
 			font-size:13px;
-			'  ><a  id='counter_see_calculation_link'  href="#small_box" >See how we figured it...</a>
+			'  ><a  id='counter_see_calculation_link'   href="#fancy_zoom_modal_box_for_calculation"  class='fancy_zoom_modal_box_for_calculation_link cursor_pointer '  >See how we figured it...</a>
 
 		</div>
 		
 		
 		
-		
-		<div id='howCalculationMade' href="#fancy_zoom_modal_box_for_common_areas"   class='fancy_zoom_modal_box_for_common_area_link container rounded_top_right  cursor_pointer rounded_top_left' >
-			
-			
-			
-		</div>
-		
-		
-<div id="small_box">
-	<div   style='
-			width:700px;
-			height:260px;		
-		'  >
-		<p><font class="Apple-style-span" color="#8B0000" size="5" face="arial">Calculations…&nbsp;</font></p>
-		<p><font class="Apple-style-span" face="georgia" size="2">Figures and estimates are from the U.S. Government Census or U.S. Government Forecasts&nbsp;<br /></font></p>
-		<ol type="1">
-			<li><font face="georgia" size="2">Start with the latest available&nbsp;<b>number of Americans 65 and older</b>&nbsp;<b>39,603,845</b></font></li>
-			<li><font face="georgia" size="2">Subtract this number from the&nbsp;<b>forecasted number of Americans 65 or older by 2030</b>&nbsp;<b>72,000,000</b></font></li>
-			<li><font face="georgia" size="2">The result is the&nbsp;<b>growth in number of Americans 65+ from 2010 to 2030</b>&nbsp;<b>32,396,155</b></font></li>
-			<li><font face="georgia" size="2">Divide growth number by number years being considered (20) to determine the&nbsp;<b>average annual growth</b>&nbsp;<b>1,619,908</b></font></li>
-			<li><font face="georgia" size="2">Divide the average annual growth by 365 to determine&nbsp;<b>average daily growth</b>&nbsp;<b>4,438</b></font></li>
-			<li><font face="georgia" size="2">Divide average daily growth by 24 to determine the&nbsp;<b>average hourly growth</b>&nbsp;<b>185</b></font></li>
-			<li><font face="georgia" size="2">Divide the average hourly growth by 60 to determine the&nbsp;<b>average growth per minute</b>&nbsp;<b>3</b></font></li>
-		</ol>
-	</div>
-</div>
-
 <script type="text/javascript" language="Javascript">
 
 	    var cnt = 39603845;
@@ -93,7 +66,19 @@
 				counter();
 				setInterval('counter()', 20000);
 				
-				$('#counter_see_calculation_link').fancyZoom()		
+				$('#counter_see_calculation_link').fancyZoom();
+				
+				
+				$('.fancy_zoom_modal_box_for_calculation_link')
+				.fancyZoom().click(function(event) {
+				
+					$("#iframe_content_for_calculation").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' +  'content' + '/' + $(this).attr('id') );
+																																																	// represents table name     									represents field name
+		
+				});		
+	
+	
+				
 			});
 			
 			function addCommas(nStr) {
@@ -110,3 +95,19 @@
 
 
 </script>
+
+
+<div id="fancy_zoom_modal_box_for_calculation"     >
+		<iframe id="iframe_content_for_calculation"   style="
+			width:700px;
+			height:440px;
+			margin: 0; 
+			padding: 0; 
+			border: 0px solid black;
+			" 
+			frameborder="0" src=""  >
+			
+		    
+		    
+		</iframe>
+</div>

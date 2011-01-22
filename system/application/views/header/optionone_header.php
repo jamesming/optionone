@@ -66,6 +66,10 @@ $(document).ready(function() {
 		
 		
 	
+
+	
+	
+	
 		$('#corporate_logo').click(function(event) {
 			document.location = '<?php echo base_url()    ?>'
 		});	
@@ -271,8 +275,6 @@ $.fn.fancyZoom = function(options){
 
 
 </script>
-
-
 
 
 
