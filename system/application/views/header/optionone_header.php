@@ -290,7 +290,8 @@ $.fn.fancyZoom = function(options){
 --> 
 
 <div   class='container'  style='
-	padding:15px 0px;
+	padding-top:10px;
+	padding-bottom:10px;
 	'  >
 	
 	<img  id='corporate_logo' class='cursor_pointer' style='
@@ -301,7 +302,7 @@ $.fn.fancyZoom = function(options){
 	
 	
 	<img   style='
-	padding-top:30px;
+	padding-top:17px;
 	padding-right:0px;
 	float:right;
 	'  
@@ -316,18 +317,20 @@ $.fn.fancyZoom = function(options){
 **/
 --> 
 
-<div   class='container' >
+<div   class='container'      >
 	
 		<img   style='
 		float:left;
+		
 		'  
 		src='<?php echo base_url(); ?>images/Menu_L.jpg'>
 
 		<div    style='
+			
 			color:white;
 			float:left;
-			width:908px;
-			height:45px;
+			#width:908px;
+			#height:45px;
 			layer-background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
 			background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
 			'  >
@@ -335,7 +338,8 @@ $.fn.fancyZoom = function(options){
 			<style>
 			#menu1 {
 			  width:908px;
-			  padding:7px 0px 0px 0px;
+			  height:32px;
+			  padding:-4px 0px 0px 0px;
 			  margin:0 auto; 
 			  list-style-type:none;
 			  }

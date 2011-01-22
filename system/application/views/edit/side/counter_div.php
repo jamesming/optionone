@@ -33,7 +33,7 @@
 	        text-align:center;
 	        #padding:15px 0px;
 					float:left;
-					width:270px;
+					width:260px;
 					height:50px;
 					background:url(<?php  echo base_url();   ?>images/counterM.jpg) repeat-x;
 					'>&nbsp;
