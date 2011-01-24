@@ -71,8 +71,9 @@
 				
 				$('.fancy_zoom_modal_box_for_calculation_link')
 				.fancyZoom().click(function(event) {
+					//alert('');
 				
-					$("#iframe_content_for_calculation").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' +  'content' + '/' + $(this).attr('id') );
+					//$("#iframe_content_for_calculation").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' +  'content' + '/' + $(this).attr('id') );
 																																																	// represents table name     									represents field name
 		
 				});		
