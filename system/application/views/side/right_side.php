@@ -2,7 +2,7 @@
 		
 		<img   style='
 		float:right;
-		width:90%;
+
 		margin:19px 0px;
 		
 		'  
