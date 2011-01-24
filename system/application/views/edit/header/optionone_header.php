@@ -1,6 +1,6 @@
 <style>
 #myGallery img{
-	margin:20px 0px 0px 0px;
+	margin:6px 0px 0px 0px;
 	float:left;
 	width:100%;
   display:none;
@@ -15,7 +15,11 @@
 </style>
 <script type="text/javascript" language="Javascript">
 
-$(document).ready(function() { 
+$(document).ready(function() {
+	
+	 
+		$('#myGallery').parent().css({height:'260px'});
+	
 		$('body').css({background:'yellow'});
 		
 		
@@ -305,8 +309,8 @@ $.fn.fancyZoom = function(options){
 --> 
 
 <div   class='container'  style='
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:5px;
+	padding-bottom:5px;
 	'  >
 	
 	<img  id='corporate_logo' class='cursor_pointer' style='
@@ -317,7 +321,7 @@ $.fn.fancyZoom = function(options){
 	
 	
 	<img   style='
-	padding-top:17px;
+	padding-top:23px;
 	padding-right:0px;
 	float:right;
 	'  
@@ -332,7 +336,7 @@ $.fn.fancyZoom = function(options){
 **/
 --> 
 
-<div   class='container'  >
+<div   class='container'     >
 	
 		<img   style='
 		float:left;

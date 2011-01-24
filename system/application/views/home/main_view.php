@@ -46,7 +46,7 @@
 **/
 -->
 
-<div class='container'   style='height:300px'   >
+<div class='container'        >
 	<div id="myGallery">
 		<img  class='active'  src='<?php  echo base_url();   ?>images/mainImage.jpg'>	
 		<img   src='<?php  echo base_url();   ?>images/mainImage2.jpg'>	

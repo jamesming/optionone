@@ -32,9 +32,9 @@
 
 -->
 
-<div class='container'   style='height:300px'   >
+<div class='container'    >
 	<div id="myGallery">
-		<img  class='active'  src='<?php echo base_url()    ?>images/About_Us_Banner.jpg'>	
+		<img  class='active'  src='<?php echo base_url()    ?>images/Services_Banner.jpg'>	
 	</div>
 </div>
 
