@@ -18,7 +18,7 @@
 $(document).ready(function() {
 	
 	 
-		$('#myGallery').parent().css({height:'260px'});
+		$('#myGallery').parent().css({height:'255px'});
 	
 		$('body').css({background:'yellow'});
 		

@@ -17,7 +17,7 @@
 
 $(document).ready(function() { 
 	
-		$('#myGallery').parent().css({height:'260px'});
+		$('#myGallery').parent().css({height:'255px'});
 	
 		$('.fancy_zoom_modal_box_for_text_editor_link').each(
 		
