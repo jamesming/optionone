@@ -51,6 +51,7 @@
 
 
 <form id='applicants'></form>
+<!--
 <div  class='container ' >
 	
 	
@@ -74,6 +75,8 @@
 		
 		
 </div>
+-->
+
 <?php     
 			$this->load->view('footer/optionone_footer.php');
 ?>

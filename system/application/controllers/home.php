@@ -468,6 +468,22 @@ function faq(){
 	
 }
 
+/**
+ * apply
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/apply
+ * @access public
+ **/ 
+
+function apply(){
+	
+		$this->load->view('home/apply_view');
+
+}
+
 
 /**
  * contact us
