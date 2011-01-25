@@ -37,23 +37,22 @@
 <div   class='container'     style='margin-top:30px'  >
 
 	<div class='column span-12 '   style='text-align:center'   >
-		
-		<img src='<?php echo base_url()    ?>images/contactUsFormBig.jpg'>	
-		
-		
-		
+		<span id='contact_us_info' href="#fancy_zoom_modal_box_for_text_editor" class='fancy_zoom_modal_box_for_text_editor_link cursor_pointer '  >
+		</span>
 	</div>
 			
 
 	
 	<div class='column span-12 last'   >
 	<iframe allowtransparency="true" src="http://www.jotform.com/form/10114419783" frameborder="0" style="width:100%; height:643px; border:none;" scrolling="no">
-</iframe>
+	</iframe>
 	</div>
 	
 </div>
 
-
+<div   class='container'     >
+		<img src='<?php echo base_url()    ?>images/contactUsFormBig.jpg'>	
+</div>
 
 
 
