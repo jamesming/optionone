@@ -50,30 +50,7 @@
 
 
 
-<form id='applicants'></form>
-<div  class='container ' >
-	
-	
-		<iframe id="iframe_content_for_applicants_form2"     class="autoHeight"    style='
-			display:none;
-			border:0px solid gray;
-			width:100%;
-			height:4270px;
-			margin: 0; 
-			padding: 0; 
-			' 
-			frameborder="0" src="<?php echo base_url();    ?>index.php/home/applicants_form_in_iframe"  >
-			
-		    <p>Your browser does not support iframes.</p>
-		    
-		</iframe>
-		
-		
-		<iframe id="iframe_content_for_applicants_form"     allowtransparency="true" src="http://www.jotform.com/form/10110604832" frameborder="0" style="width:100%; height:4452px; border:none;" >
-		</iframe>
-		
-		
-</div>
+
 <?php     
 			$this->load->view('edit/footer/optionone_footer.php');
 ?>
