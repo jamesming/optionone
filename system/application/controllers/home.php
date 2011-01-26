@@ -24,7 +24,7 @@
  */
 class Home extends Controller {
 	
-	public $edit_key_word = 'edit';
+	public $edit_key_word = 'shanti12';
 
 	function Home(){
 		parent::Controller();	
