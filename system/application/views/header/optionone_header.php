@@ -4,7 +4,7 @@
 	float:left;
 	width:100%;
   display:none;
-  #position:absolute;
+  position:relative;
   #top:0;
   #left:0;
 }
@@ -332,7 +332,7 @@ $.fn.fancyZoom = function(options){
 			color:white;
 			float:left;
 			#width:908px;
-			#height:45px;
+			height:32px;
 			layer-background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
 			background-image: url(<?php echo base_url(); ?>images/Menu_1px.jpg);
 			'  >
@@ -387,4 +387,5 @@ $.fn.fancyZoom = function(options){
 		src='<?php echo base_url(); ?>images/Menu_R.jpg'>				
 		
 </div>
+
 
