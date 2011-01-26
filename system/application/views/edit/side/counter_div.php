@@ -21,24 +21,19 @@
 			letter-spacing: 2pt;
 			'  >Americans 65 and Older
 		</div>
-		<div    >
-				<img    style='float:left'    src='<?php  echo base_url();   ?>images/counterL.jpg'>
-				<div  id='displayCounter'   style='
-					
-					color:darkred;
-					letter-spacing: 5pt;
-					font-weight:bold;
-	        font-size:27px;
-	        font-family:Georgia;
-	        text-align:center;
-	        #padding:15px 0px;
-					float:left;
-					width:260px;
-					height:50px;
-					background:url(<?php  echo base_url();   ?>images/counterM.jpg) repeat-x;
-					'>&nbsp;
-				</div>
-				<img    style='float:left'    src='<?php  echo base_url();   ?>images/counterR.jpg'>
+		<div    id='displayCounter' style='
+			background:url(<?php  echo base_url();   ?>images/new_counter.jpg) no-repeat;
+							color:darkred;
+							letter-spacing: 5pt;
+							font-weight:bold;
+			        font-size:27px;
+			        font-family:Georgia;
+			        text-align:center;
+			        #padding:15px 0px;
+							float:left;
+							width:320px;
+							height:60px;
+			'  >
 		</div>
 		<div   style='
 			margin-top:70px;
