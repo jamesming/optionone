@@ -45,6 +45,8 @@ class Home extends Controller {
 
 function index(){
 	
+//	$this->load->view('home/index_view');
+	
 	$edit = $this->uri->segment(3);
 	
 	if( $edit == $this->edit_key_word){

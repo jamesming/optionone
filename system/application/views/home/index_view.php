@@ -12,7 +12,7 @@
 	
 					setInterval(function() {
 					
-					 $('#insideDiv').load('<?php echo  base_url();   ?>index.php/<?php echo $controller; ?>/index_inside');
+					 $('#insideDiv').load('<?php echo  base_url();   ?>index.php/home/index_inside');
 	
 				  }, 1000);
 				

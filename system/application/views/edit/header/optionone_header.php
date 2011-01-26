@@ -357,7 +357,7 @@ $.fn.fancyZoom = function(options){
 			#menu1 {
 			  width:908px;
 			  height:32px;
-			  padding:-4px 0px 0px 0px;
+			  padding:0px 0px 0px 0px;
 			  margin:0 auto; 
 			  list-style-type:none;
 			  }
@@ -365,18 +365,15 @@ $.fn.fancyZoom = function(options){
 			#menu1 li {
 			  float:left;
 			  width:148px;
-			  #border:1px solid #fff; 
+			  text-align:center;
+			  padding:4px 0; 
 			  }
 			
 			#menu1 a {
-			  display:block;
-			  width:98px;
+				text-decoration:none;
+				margin:0px auto;
+			  width:auto;
 			  color:white; 
-			  #background:#d4d4d4; 
-			  text-align:center; 
-			  padding:4px 0; 
-			  text-decoration:none; 
-			  float:left; 
 			  font-size:14px;
 			  font-weight:bold;
 			  font-family: 'trebuchet MS', sans-serif;
