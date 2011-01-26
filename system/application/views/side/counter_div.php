@@ -33,7 +33,6 @@
 	        font-size:27px;
 	        font-family:Georgia;
 	        text-align:center;
-	        #padding:15px 0px;
 					float:left;
 					width:320px;
 					height:60px;
