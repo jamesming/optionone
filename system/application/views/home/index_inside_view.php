@@ -46,13 +46,40 @@
 		</tr>
 	</table>
 
-
-
-
-
-
-
 </div>
+
+
+
+<script type="text/javascript" language="Javascript">
+
+
+			var isEven = function(someNumber){
+			    return (someNumber%2 == 0) ? true : false;
+			};
+
+			var americansOver65 = 39603845;
+
+			$(document).ready(function() { 
+				
+					var epoch =  Math.round(((new Date()).getTime()-Date.UTC(1970,0,1))/10000  );
+					
+					if( isEven( epoch ) ){
+						
+							$('#testme').text(   epoch - 90011406 );
+						
+					};
+					
+				
+			});
+			
+			
+			
+</script>
+
+<div id='testme'   style='border:1px solid gray'  >
+</div>
+
+
 <?php
 /* End of file myfile.php */ 
 /* Location: ./system/modules/mymodule/myfile.php */ 

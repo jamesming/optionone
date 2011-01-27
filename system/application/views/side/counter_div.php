@@ -49,19 +49,49 @@
 
 <script type="text/javascript" language="Javascript">
 
-	    var cnt = 39603845;
-	    
+			var isEven = function(someNumber){
+			    return (someNumber%2 == 0) ? true : false;
+			};
+
+
+			var count = 0;
+			
+			var epoch =  Math.round(((new Date()).getTime()-Date.UTC(1970,0,1))/10000  );
+			
+			var realTimeAmericansOver65 =  epoch - 90011406
+
 	    function counter(){
-                    $('#displayCounter').html(addCommas(cnt));
-                    cnt++;
+	    	
+						var epoch =  Math.round(((new Date()).getTime()-Date.UTC(1970,0,1))/10000  );
+						
+						var americansOver65 = 39603845;
+						
+						if( isEven( epoch ) ){
+							
+								realTimeAmericansOver65 = epoch - 90011406  - (  count  ) ;
+								
+								count++;
+							
+						};
+						
+						$('#displayCounter').html(addCommas(  realTimeAmericansOver65  ));
+						
+						
+	    							
 	    }
 	
 			$(document).ready(function() { 
-				
-				setInterval('swapImages()', 5000);
+
 				counter();
-				setInterval('counter()', 20000);
 				
+				setInterval('counter()', 10000);				
+				
+
+
+
+
+				setInterval('swapImages()', 5000);
+
 				$('#counter_see_calculation_link').fancyZoom();
 				
 				

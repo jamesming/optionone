@@ -71,20 +71,62 @@
 
 <script type="text/javascript" language="Javascript">
 
-	    var cnt = 39603845;
-	    
+			var isEven = function(someNumber){
+			    return (someNumber%2 == 0) ? true : false;
+			};
+
+
+			var count = 0;
+			
+			var epoch =  Math.round(((new Date()).getTime()-Date.UTC(1970,0,1))/10000  );
+			
+			var realTimeAmericansOver65 =  epoch - 90011406
+
 	    function counter(){
-                    $('#displayCounter').html(addCommas(cnt));
-                    cnt++;
+	    	
+						var epoch =  Math.round(((new Date()).getTime()-Date.UTC(1970,0,1))/10000  );
+						
+						var americansOver65 = 39603845;
+						
+						if( isEven( epoch ) ){
+							
+								realTimeAmericansOver65 = epoch - 90011406  - (  count  ) ;
+								
+								count++;
+							
+						};
+						
+						$('#displayCounter').html(addCommas(  realTimeAmericansOver65  ));
+						
+						
+	    							
 	    }
 	
 			$(document).ready(function() { 
-				
-				setInterval('swapImages()', 5000);
+
 				counter();
-				setInterval('counter()', 20000);
 				
-				$('#counter_see_calculation_link').fancyZoom()		
+				setInterval('counter()', 10000);				
+				
+
+
+
+
+				setInterval('swapImages()', 5000);
+
+				$('#counter_see_calculation_link').fancyZoom();
+				
+				
+				$('.fancy_zoom_modal_box_for_calculation_link')
+				.fancyZoom().click(function(event) {
+				
+					$("#iframe_content_for_calculation").attr('src','<?php echo base_url();    ?>index.php/home/moreabout/' +  'content' + '/' + $(this).attr('id') );
+																																																	// represents table name     									represents field name
+		
+				});		
+	
+	
+				
 			});
 			
 			function addCommas(nStr) {
