@@ -10,6 +10,8 @@
 	table#info td{
 	padding:10px 15px 10px 0px;
 	text-align:left;
+	font-weight:bold;
+	font-size:12px;
 	}
 	table#info td:nth-child(odd){
 	text-align:right;
