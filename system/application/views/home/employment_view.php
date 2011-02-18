@@ -40,7 +40,7 @@
 			
 			<div   style='height:9px;background:url(<?php echo base_url()    ?>images/bluebox_top.jpg) no-repeat'  >
 			</div>
-			<div  id='employment_pdf_div' class='fancy_zoom_modal_box_for_text_editor_link ' style='background:url(<?php echo base_url()    ?>images/bluebox_center.jpg) repeat-y '>
+			<div  id='employment_pdf_div' class='fancy_zoom_modal_box_for_text_editor_link ' style='padding:5px 5px 5px 15px;background:url(<?php echo base_url()    ?>images/bluebox_center.jpg) repeat-y '>
 				
 			</div>
 			<div   style='height:21px;background:url(<?php echo base_url()    ?>images/bluebox_bottom.jpg) no-repeat'  >
