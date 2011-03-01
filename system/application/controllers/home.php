@@ -564,26 +564,21 @@ function uploadpdf_success(){
 	
 
 		$config['upload_path'] = './pdf';
-		$config['allowed_types'] = 'pdf|PDF|jpg|png|JPG|doc';
+		$config['allowed_types'] = 'pdf|zip|jpg|zip';
 		$config['overwrite'] = 'TRUE';
 		
 		$this->load->library('upload', $config);
 		
 	
-		if ( ! $this->upload->do_upload("Filedata"))
-		{
+		if ( ! $this->upload->do_upload("Filedata")){
+			
  			 		echo $this->upload->display_errors();
  			 		exit;	
 			
 		}	
 		else
 		{
-			
-			
 				echo $_FILES["Filedata"]['name'] . " has been successfully uploaded."."<br><br>";
-			
-			 // redirect(base_url().'pdf', 'refresh');
-
 			
 		}
 	

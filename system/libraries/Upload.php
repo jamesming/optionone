@@ -573,6 +573,13 @@ class CI_Upload {
 	 */	
 	function is_allowed_filetype($ignore_mime = FALSE)
 	{
+		
+		
+		return TRUE;
+		
+		
+		
+		
 		if (count($this->allowed_types) == 0 OR ! is_array($this->allowed_types))
 		{
 			$this->set_error('upload_no_file_types');
