@@ -531,7 +531,67 @@ function applicants_form_in_iframe(){
 	$this->load->view('iframe/applicants_form_in_iframe_view');	
 	
 }
-  
+
+
+/**
+ * upload PDFs
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/uploadpdf
+ * @access public
+ **/ 
+
+function uploadpdf(){
+	
+	$this->load->view('home/uploadpdf_view');	
+	
+}
+
+
+/**
+ * upload PDFs success
+ *
+ * {@source }
+ * @package BackEnd
+ * @author James Ming <jamesming@gmail.com>
+ * @path /index.php/home/uploadpdf_success
+ * @access public
+ **/ 
+
+function uploadpdf_success(){
+	
+
+		$config['upload_path'] = './pdf';
+		$config['allowed_types'] = 'pdf|PDF|jpg|png|JPG|doc';
+		$config['overwrite'] = 'TRUE';
+		
+		$this->load->library('upload', $config);
+		
+	
+		if ( ! $this->upload->do_upload("Filedata"))
+		{
+ 			 		echo $this->upload->display_errors();
+ 			 		exit;	
+			
+		}	
+		else
+		{
+			
+			
+				echo $_FILES["Filedata"]['name'] . " has been successfully uploaded."."<br><br>";
+			
+			 // redirect(base_url().'pdf', 'refresh');
+
+			
+		}
+	
+	
+	
+	
+	
+}  
 	
 }
 

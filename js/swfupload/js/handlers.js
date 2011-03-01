@@ -102,16 +102,10 @@ function uploadProgress(file, bytesLoaded, bytesTotal) {
 
 function uploadSuccess(file, serverData) {
 	try {
-		
-		
 
-		// present error message to user 
-		if( serverData == 'Maximum files exceeded for this album.'){
-			popup_error(serverData);
-			swfu.cancelQueue(); 
-			hide_progress_indicator();			
-		};
-
+		$('#error_div').append(serverData);
+		
+		// swfu.cancelQueue(); 
 
 		
 		var progress = new FileProgress(file, this.customSettings.progressTarget);
