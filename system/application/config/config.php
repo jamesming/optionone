@@ -20,7 +20,7 @@ if( $_SERVER['HTTP_HOST'] == 'www.jamesming.com' ){
 }elseif( $_SERVER['HTTP_HOST'] == 'www.ihcoption.com' ){
 	$config['base_url']	= "http://www.ihcoption.com";
 }elseif( $_SERVER['HTTP_HOST'] == 'www.optiononecareathome.com' ){
-	$config['base_url']	= "http://http://www.optiononecareathome.com";
+	$config['base_url']	= "http://www.optiononecareathome.com";
 };
 
 	
