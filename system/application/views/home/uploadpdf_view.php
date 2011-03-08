@@ -92,14 +92,18 @@
  
  
 <div id="content"  class=' container' >
-			<div class="fieldset flash" id="fsUploadProgress">
+	
+			<div  id="fsUploadProgress" class="fieldset flash">
 			<span class="legend">Upload Queue</span>
 			</div>
-		<div id="divStatus">0 Files Uploaded</div>
+			
+			<div id="divStatus">0 Files Uploaded</div>
+			
 			<div>
 				<span id="spanButtonPlaceHolder">test</span>
 				<input id="btnCancel" type="button" value="Cancel All Uploads" onclick="swfu.cancelQueue();" disabled="disabled" style="margin-left: 2px; font-size: 8pt; height: 29px;" />
 			</div>
+			
 </div>
 
 
