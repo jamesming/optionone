@@ -25,9 +25,18 @@
 class Home extends Controller {
 	
 	public $edit_key_word = 'shanti12';
+	public $content;
 
 	function Home(){
 		parent::Controller();	
+		
+		
+		$select_what =  '*';
+		
+		$where_array = array();
+		
+		$this->content = $this->my_database_model->select_from_table( $table = 'content', $select_what, $where_array );
+		
 
 	}
 	
@@ -54,8 +63,10 @@ $edit = $this->uri->segment(3);
 		$this->load->view('edit/home/main_view');
 
 	}else{
+		
+		$data = array('content' => $this->content);
 	
-		$this->load->view('home/main_view');
+		$this->load->view('home/main_view', $data);
 		
 	};
 

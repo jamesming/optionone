@@ -76,7 +76,12 @@
 			
 	<div class='column span-8'     >
 		<div id='home_straightforward_head'   class='  fancy_zoom_modal_box_for_text_editor_link '>
-			
+									<?php
+												if( isset( $content[0]->home_straightforward_head  ) )
+													echo $content[0]->home_straightforward_head;
+												else
+													echo "some content"
+									?>
 		</div>
 		<img   style='
 		float:left;
@@ -87,6 +92,12 @@
 	
 	<div class='column span-8'   style='border:0px solid gray'  >
 		<div id='home_qualified_head'    class='  fancy_zoom_modal_box_for_text_editor_link ' >
+									<?php
+												if( isset( $content[0]->home_qualified_head  ) )
+													echo $content[0]->home_qualified_head;
+												else
+													echo "some content"
+									?>
 		</div>
 		<img   style='
 			float:left;
@@ -97,6 +108,12 @@
 	
 	<div class='column span-8 last'   style='border:0px solid gray'  >
 		<div id='home_attentive_head'   class='  fancy_zoom_modal_box_for_text_editor_link '>
+									<?php
+												if( isset( $content[0]->home_attentive_head  ) )
+													echo $content[0]->home_attentive_head;
+												else
+													echo "some content"
+									?>
 		</div>
 		<img   style='
 		float:left;
@@ -126,13 +143,31 @@
 	<div class='column span-8 subhead_B_div'  >
 
 
-		<span id='home_ourservice'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='home_ourservice'  class='  fancy_zoom_modal_box_for_text_editor_link '  >
+			
+									<?php
+												if( isset( $content[0]->home_ourservice  ) )
+													echo $content[0]->home_ourservice;
+												else
+													echo "some content"
+									?>
+			
+		</span>
 		
 	</div>
 	
 	<div class='column span-8 subhead_B_div '   style='border:0px solid gray'  >
 
-		<span id='home_whyoption'  class='  fancy_zoom_modal_box_for_text_editor_link '  ></span>
+		<span id='home_whyoption'  class='  fancy_zoom_modal_box_for_text_editor_link '  >
+			
+									<?php
+												if( isset( $content[0]->home_whyoption  ) )
+													echo $content[0]->home_whyoption;
+												else
+													echo "some content"
+									?>
+			
+		</span>
 	</div>	
 	
 	<div class='column span-8 last subhead_B_div'   style='border:0px solid gray'  >
