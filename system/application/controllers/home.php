@@ -93,7 +93,7 @@ $edit = $this->uri->segment(3);
 							
 								$this->email->from('jamesming@jamesming.com', '');
 								$this->email->to('jamesming@gmail.com');
-								$this->email->subject('Visitor to Interactive Resume Jamesming.com');
+								$this->email->subject('Visitor to OptionOneCareAtHome Website');
 								$this->email->message($message);
 								
 								$this->email->send();
