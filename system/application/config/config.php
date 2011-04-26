@@ -13,8 +13,8 @@
 */
 
 
-if( $_SERVER['HTTP_HOST'] == 'www.jamesming.com' ){
-	$config['base_url']	= "http://www.jamesming.com/optionone";	
+if( $_SERVER['HTTP_HOST'] == 'jamesming.whsites.net' ){
+	$config['base_url']	= "http://jamesming.whsites.net/optionone";	
 }elseif( $_SERVER['HTTP_HOST'] == '127.0.0.1' ){
 	$config['base_url']	= "http://127.0.0.1/optionone";
 }elseif( $_SERVER['HTTP_HOST'] == 'www.ihcoption.com' ){
