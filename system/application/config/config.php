@@ -17,6 +17,8 @@ if( $_SERVER['HTTP_HOST'] == 'jamesming.whsites.net' ){
 	$config['base_url']	= "http://jamesming.whsites.net/optionone";	
 }elseif( $_SERVER['HTTP_HOST'] == '127.0.0.1' ){
 	$config['base_url']	= "http://127.0.0.1/optionone";
+}elseif( $_SERVER['HTTP_HOST'] == 'localhost' ){
+	$config['base_url']	= "http://localhost/optionone";
 }elseif( $_SERVER['HTTP_HOST'] == 'www.ihcoption.com' ){
 	$config['base_url']	= "http://www.ihcoption.com";
 }elseif( $_SERVER['HTTP_HOST'] == 'www.optiononecareathome.com' ){

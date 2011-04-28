@@ -60,7 +60,7 @@ $edit = $this->uri->segment(3);
 	
 	if( $edit == $this->edit_key_word){
 
-		$this->load->view('edit/home/main_view');
+		$this->load->view('edit/home/main_view', array('edit' => 1, ));
 
 	}else{
 		
@@ -92,7 +92,7 @@ $edit = $this->uri->segment(3);
 								$this->load->library('email');
 							
 								$this->email->from('jamesming@jamesming.com', '');
-								$this->email->to('richard@optiononecareathome.com');
+								$this->email->to('rforhez@gmail.com');
 								$this->email->subject('Visitor to OptionOneCareAtHome Website');
 								$this->email->message($message);
 								
