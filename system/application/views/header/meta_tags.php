@@ -27,4 +27,9 @@
 
  
 
-<meta name="keywords" content="in-home care in home care home care senior care elderly nursing services assisted living Marin North Bay East Bay Bay Area San Rafael Tiburon Mill Valley Sausalito Novato Larkspur Greenbrae Kentfield Ross San Anselmo Fairfax Belvedere Petaluma Oakland Santa Rosa Healdsburg Sebastopol Guerneville Rohnert Park Berkeley Emeryville Albany San Pablo Hercules Vallejo Concord Walnut Creek Lafayette Moraga Martinez Danville San Ramon Dublin Pleasanton Castro Valley San Leandro Alameda Freemont Union City" />
+<meta name="keywords" content="<?php
+												if( isset( $content[0]->home_meta_tags  ) )
+													echo $content[0]->home_meta_tags;
+												else
+													echo "some content"
+									?>" />
