@@ -75,9 +75,16 @@
 	
 	
 	
-<?php     
-			$this->load->view('side/right_side.php');
-?>
+		<div id=''  class='last span-8  '      style='padding-top:30px; vertical-align:top'      >
+			
+			<div   style='height:9px;background:url(<?php echo base_url()    ?>images/bluebox_top.jpg) no-repeat'  >
+			</div>
+			<div  id='aboutus_pdf_div' class='fancy_zoom_modal_box_for_text_editor_link ' style='padding:5px 5px 5px 15px;background:url(<?php echo base_url()    ?>images/bluebox_center.jpg) repeat-y '>
+				
+			</div>
+			<div   style='height:21px;background:url(<?php echo base_url()    ?>images/bluebox_bottom.jpg) no-repeat'  >
+			</div>
+		</div>
 
 
 
