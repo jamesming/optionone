@@ -51,7 +51,7 @@
 			</iframe>
 			
 			
-			<iframe id="iframe_content_for_applicants_form"     allowtransparency="true" src="http://www.jotform.com/form/10110604832" frameborder="0" style="width:100%; height:4870px; border:none;" >
+			<iframe id="iframe_content_for_applicants_form"     allowtransparency="true" src="http://www.jotformpro.com/form/10110604832" frameborder="0" style="width:100%; height:4870px; border:none;" >
 			</iframe>
 			
 			
